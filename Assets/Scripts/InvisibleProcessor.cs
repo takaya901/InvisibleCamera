@@ -4,21 +4,21 @@ using OpenCVForUnity;
 using static OpenCVForUnity.Imgproc;
 using static OpenCVForUnity.Core;
 
-public class InvisibleProcessor
+public static class InvisibleProcessor
 {
-    Mat _background;
+    static Mat _background;
     static readonly Scalar SKIN_LOWER = new Scalar(0, 0, 50);
     static readonly Scalar SKIN_UPPER = new Scalar(25, 173, 255);
     static readonly Scalar HAIR_LOWER = new Scalar(0, 0, 0);
     static readonly Scalar HAIR_UPPER = new Scalar(255, 255, 100);
 
-    public void SaveBackground(Mat webcamMat)
+    public static void SaveBackground(Mat webcamMat)
     {
         _background = webcamMat.clone();
     }
 
     /// <summary>背景を保存したかどうか</summary>
-    public bool HasSavedBackground()
+    public static bool HasSavedBackground()
     {
         return _background != null;
     }   
@@ -26,7 +26,7 @@ public class InvisibleProcessor
     /// <summary>肌と髪の領域を背景で置換する</summary>
     /// <param name="webcamMat">カメラからのRGBA画像</param>
     /// <returns>置換後のRGBA画像</returns>
-    public Mat ConvertToInvisible(Mat webcamMat)
+    public static Mat ConvertToInvisible(Mat webcamMat)
     {
         //カメラ映像ををHSVに変換
         var blured = new Mat();

@@ -9,9 +9,9 @@ using static OpenCVForUnity.Core;
 public class WebCamManager : MonoBehaviour
 {
     Texture2D _texture;
-    WebCamTextureToMatHelper _webCamTextureToMatHelper;
+    static WebCamTextureToMatHelper _webCamTextureToMatHelper;
     FpsMonitor _fpsMonitor;
-    InvisibleProcessor _invisibleProcessor = new InvisibleProcessor();
+//    InvisibleProcessor _invisibleProcessor = new InvisibleProcessor();
     float time = 5;
     bool _hasSavedBackground;
     
@@ -34,12 +34,17 @@ public class WebCamManager : MonoBehaviour
         
         if (!_webCamTextureToMatHelper.IsPlaying() || !_webCamTextureToMatHelper.DidUpdateThisFrame()) return;
 
-        if (!_invisibleProcessor.HasSavedBackground()) {
-            _invisibleProcessor.SaveBackground(_webCamTextureToMatHelper.GetMat());
+        if (!InvisibleProcessor.HasSavedBackground()) {
+            InvisibleProcessor.SaveBackground(_webCamTextureToMatHelper.GetMat());
         }
 //        var rgbaMat = _webCamTextureToMatHelper.GetMat();
-        var rgbaMat = _invisibleProcessor.ConvertToInvisible(_webCamTextureToMatHelper.GetMat());
+        var rgbaMat = InvisibleProcessor.ConvertToInvisible(_webCamTextureToMatHelper.GetMat());
         Utils.fastMatToTexture2D(rgbaMat, _texture);
+    }
+
+    public static Mat GetWebCamMat()
+    {
+        return _webCamTextureToMatHelper.GetMat();
     }
     
     public void OnWebCamTextureToMatHelperInitialized()

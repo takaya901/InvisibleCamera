@@ -554,9 +554,9 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="InvisibleProcessor.cs" t="Include" />
-          <e p="PictureTaker.cs" t="Include" />
           <e p="WebCamManager.cs" t="Include" />
         </e>
+        <e p="ShutterHandler.cs" t="Include" />
         <e p="StreamingAssets" t="Include">
           <e p="haarcascade_frontalface_alt.xml" t="Include" />
           <e p="lbpcascade_frontalface.xml" t="Include" />

@@ -13,6 +13,7 @@ public class WebCamManager : MonoBehaviour
     FpsMonitor _fpsMonitor;
     InvisibleProcessor _invisibleProcessor = new InvisibleProcessor();
     float time = 5;
+    bool _hasSavedBackground;
     
     void Start()
     {
@@ -32,8 +33,10 @@ public class WebCamManager : MonoBehaviour
         }
         
         if (!_webCamTextureToMatHelper.IsPlaying() || !_webCamTextureToMatHelper.DidUpdateThisFrame()) return;
-        
-        _invisibleProcessor.SaveBackground(_webCamTextureToMatHelper.GetMat());
+
+        if (!_invisibleProcessor.HasSavedBackground()) {
+            _invisibleProcessor.SaveBackground(_webCamTextureToMatHelper.GetMat());
+        }
 //        var rgbaMat = _webCamTextureToMatHelper.GetMat();
         var rgbaMat = _invisibleProcessor.ConvertToInvisible(_webCamTextureToMatHelper.GetMat());
         Utils.fastMatToTexture2D(rgbaMat, _texture);

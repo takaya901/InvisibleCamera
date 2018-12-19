@@ -554,6 +554,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="InvisibleProcessor.cs" t="Include" />
+          <e p="PictureTaker.cs" t="Include" />
           <e p="WebCamManager.cs" t="Include" />
         </e>
         <e p="StreamingAssets" t="Include">

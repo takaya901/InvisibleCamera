@@ -52,14 +52,6 @@ public static class InvisibleProcessor
         var skinAndHairMask = new Mat();
         bitwise_or(skinMask, hairMask, skinAndHairMask);
         
-        //肌と髪の領域をラベリングして面積上位10個だけ残す
-        var label = new Mat();   var stats = new Mat();    var centroids = new Mat();
-        var nLabels = connectedComponentsWithStats(skinAndHairMask, label, stats, centroids);
-//        for (int i = 1; i < nLabels; i++) {
-//            var area = stats.get(i, CC_STAT_AREA)[0];
-//            
-//        }
-        
         var bgrOnSkinAndHair = new Mat();
         bitwise_and(_background, _background, bgrOnSkinAndHair, skinAndHairMask);
         

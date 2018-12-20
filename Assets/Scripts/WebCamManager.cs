@@ -28,10 +28,10 @@ public class WebCamManager : MonoBehaviour
     void Update()
     {
         #if !UNITY_EDITOR
-        if (_time > 0) {
-            _time -= Time.deltaTime;
-            return;
-        }
+//        if (_time > 0) {
+//            _time -= Time.deltaTime;
+//            return;
+//        }
         #endif
         
         if (!_webCamTextureToMatHelper.IsPlaying() || !_webCamTextureToMatHelper.DidUpdateThisFrame()) return;

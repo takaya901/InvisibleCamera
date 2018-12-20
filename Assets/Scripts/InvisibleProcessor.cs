@@ -1,16 +1,21 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using OpenCVForUnity;
 using UnityEngine;
-using OpenCVForUnity;
 using static OpenCVForUnity.Imgproc;
 using static OpenCVForUnity.Core;
 
 public static class InvisibleProcessor
 {
     static Mat _background;
-    static readonly Scalar SKIN_LOWER = new Scalar(0, 0, 50);
-    static readonly Scalar SKIN_UPPER = new Scalar(25, 173, 255);
-    static readonly Scalar HAIR_LOWER = new Scalar(0, 0, 0);
-    static readonly Scalar HAIR_UPPER = new Scalar(255, 255, 100);
+    static double _screenArea;    //ノイズ除去に使用
+    static readonly Scalar SKIN_LOWER = new Scalar(0, 40, 60);
+    static readonly Scalar SKIN_UPPER = new Scalar(20, 255, 255);
+    static readonly Scalar HAIR_LOWER = new Scalar(0, 0, 0);    
+    static readonly Scalar HAIR_UPPER = new Scalar(180, 120, 80);
+
+    static InvisibleProcessor()
+    {
+        _screenArea = Screen.width * Screen.height;
+    }
 
     public static void SaveBackground(Mat webcamMat)
     {
@@ -38,14 +43,22 @@ public static class InvisibleProcessor
         //肌と髪の領域と同じ位置の背景領域を抽出
         var skinMask = new Mat();
         inRange(hsv, SKIN_LOWER, SKIN_UPPER, skinMask);
-        morphologyEx(skinMask, skinMask, MORPH_OPEN, new Mat(), new Point(-1, -1), 3);
+        morphologyEx(skinMask, skinMask, MORPH_OPEN, new Mat(), new Point(-1, -1), 10);
         
         var hairMask = new Mat();
         inRange(hsv, HAIR_LOWER, HAIR_UPPER, hairMask);
-        morphologyEx(hairMask, hairMask, MORPH_OPEN, new Mat(), new Point(-1, -1), 3);
+        morphologyEx(hairMask, hairMask, MORPH_OPEN, new Mat(), new Point(-1, -1), 15);
         
         var skinAndHairMask = new Mat();
         bitwise_or(skinMask, hairMask, skinAndHairMask);
+        
+        //肌と髪の領域をラベリングして面積上位10個だけ残す
+        var label = new Mat();   var stats = new Mat();    var centroids = new Mat();
+        var nLabels = connectedComponentsWithStats(skinAndHairMask, label, stats, centroids);
+//        for (int i = 1; i < nLabels; i++) {
+//            var area = stats.get(i, CC_STAT_AREA)[0];
+//            
+//        }
         
         var bgrOnSkinAndHair = new Mat();
         bitwise_and(_background, _background, bgrOnSkinAndHair, skinAndHairMask);

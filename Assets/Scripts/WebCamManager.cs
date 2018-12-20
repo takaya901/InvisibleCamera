@@ -12,7 +12,7 @@ public class WebCamManager : MonoBehaviour
     static WebCamTextureToMatHelper _webCamTextureToMatHelper;
     FpsMonitor _fpsMonitor;
 //    InvisibleProcessor _invisibleProcessor = new InvisibleProcessor();
-    float time = 5;
+    float _time = 5;
     bool _hasSavedBackground;
     
     void Start()
@@ -27,10 +27,12 @@ public class WebCamManager : MonoBehaviour
     
     void Update()
     {
-        if (time > 0) {
-            time -= Time.deltaTime;
+        #if !UNITY_EDITOR
+        if (_time > 0) {
+            _time -= Time.deltaTime;
             return;
         }
+        #endif
         
         if (!_webCamTextureToMatHelper.IsPlaying() || !_webCamTextureToMatHelper.DidUpdateThisFrame()) return;
 

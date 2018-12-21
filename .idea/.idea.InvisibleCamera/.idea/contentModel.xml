@@ -556,6 +556,7 @@
           <e p="CameraSwitchHandler.cs" t="Include" />
           <e p="InvisibleConverter.cs" t="Include" />
           <e p="ShutterHandler.cs" t="Include" />
+          <e p="ToMatHelperManager.cs" t="Include" />
           <e p="WebCamManager.cs" t="Include" />
         </e>
       </e>

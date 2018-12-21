@@ -4,12 +4,7 @@
     <list default="true" id="1b8bd20b-a47b-4c17-a50c-1a7793ed047b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.InvisibleCamera/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.InvisibleCamera/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.InvisibleCamera/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.InvisibleCamera/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InvisibleProcessor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InvisibleProcessor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShutterHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShutterHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/WebCamManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WebCamManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,25 +25,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="4253" />
+          <entry key="cs" value="4606" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="4253" />
+          <entry key="C#" value="4606" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="14" />
+          <entry key="cs" value="22" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="14" />
+          <entry key="C#" value="22" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
@@ -59,22 +54,208 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/WebCamManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="768">
-              <caret line="48" column="51" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
+            <state relative-caret-position="527">
+              <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
               <folding>
-                <marker date="1545402072866" expanded="true" signature="6:103" ph="..." />
-                <marker date="1545402072866" expanded="true" signature="220:3299" ph="{...}" />
-                <marker date="1545402072866" expanded="true" signature="429:753" ph="{...}" />
-                <marker date="1545402072866" expanded="true" signature="776:1281" ph="{...}" />
-                <marker date="1545402072866" expanded="true" signature="1078:1145" ph="{...}" />
-                <marker date="1545402072866" expanded="true" signature="1342:2806" ph="{...}" />
-                <marker date="1545402072866" expanded="true" signature="1816:2057" ph="{...}" />
-                <marker date="1545402072866" expanded="true" signature="2337:2435" ph="{...}" />
-                <marker date="1545402072866" expanded="true" signature="2525:2614" ph="/* Quadを画面いっぱいにリサイズ ... */" />
-                <marker date="1545402072866" expanded="true" signature="2861:3033" ph="{...}" />
-                <marker date="1545402072866" expanded="true" signature="2956:3027" ph="{...}" />
-                <marker date="1545402072866" expanded="true" signature="3140:3223" ph="{...}" />
-                <marker date="1545402072866" expanded="true" signature="3249:3297" ph="{...}" />
+                <marker date="1545407219977" expanded="true" signature="6:103" ph="..." />
+                <marker date="1545407219977" expanded="true" signature="220:1909" ph="{...}" />
+                <marker date="1545407219977" expanded="true" signature="473:912" ph="{...}" />
+                <marker date="1545407219977" expanded="true" signature="935:1440" ph="{...}" />
+                <marker date="1545407219977" expanded="true" signature="1237:1304" ph="{...}" />
+                <marker date="1545407219977" expanded="true" signature="1497:1585" ph="{...}" />
+                <marker date="1545407219977" expanded="true" signature="1640:1713" ph="{...}" />
+                <marker date="1545407219977" expanded="true" signature="1820:1907" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/OpenCVForUnity/Examples/FpsMonitor.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="377">
+              <caret line="67" column="23" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
+              <folding>
+                <marker date="1535829662000" expanded="false" signature="6:78" ph="..." />
+                <marker date="1535829662000" expanded="true" signature="111:5142" ph="{...}" />
+                <marker date="1535829662000" expanded="true" signature="157:5140" ph="{...}" />
+                <marker date="1535829662000" expanded="true" signature="266:378" ph="{...}" />
+                <marker date="1535829662000" expanded="true" signature="1438:1825" ph="{...}" />
+                <marker date="1535829662000" expanded="true" signature="1893:2103" ph="{...}" />
+                <marker date="1535829662000" expanded="true" signature="1985:2093" ph="{...}" />
+                <marker date="1535829662000" expanded="true" signature="2127:3300" ph="{...}" />
+                <marker date="1535829662000" expanded="true" signature="2207:2251" ph="{...}" />
+                <marker date="1535829662000" expanded="true" signature="2363:2414" ph="{...}" />
+                <marker date="1535829662000" expanded="true" signature="2651:2738" ph="{...}" />
+                <marker date="1535829662000" expanded="true" signature="2881:3290" ph="{...}" />
+                <marker date="1535829662000" expanded="true" signature="2915:2983" ph="{...}" />
+                <marker date="1535829662000" expanded="true" signature="3353:3534" ph="{...}" />
+                <marker date="1535829662000" expanded="true" signature="3401:3458" ph="{...}" />
+                <marker date="1535829662000" expanded="true" signature="3576:3624" ph="{...}" />
+                <marker date="1535829662000" expanded="true" signature="3655:3699" ph="{...}" />
+                <marker date="1535829662000" expanded="true" signature="3745:4383" ph="{...}" />
+                <marker date="1535829662000" expanded="true" signature="4450:4764" ph="{...}" />
+                <marker date="1535829662000" expanded="true" signature="4480:4754" ph="{...}" />
+                <marker date="1535829662000" expanded="true" signature="4819:5134" ph="{...}" />
+                <marker date="1535829662000" expanded="true" signature="4849:5124" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/ToMatHelperManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="523">
+              <caret line="49" column="75" selection-start-line="49" selection-start-column="75" selection-end-line="49" selection-end-column="75" />
+              <folding>
+                <marker date="1545407208158" expanded="true" signature="6:47" ph="..." />
+                <marker date="1545407208158" expanded="true" signature="80:2529" ph="{...}" />
+                <marker date="1545407208158" expanded="true" signature="333:471" ph="{...}" />
+                <marker date="1545407208158" expanded="true" signature="553:2029" ph="{...}" />
+                <marker date="1545407208158" expanded="true" signature="1033:1274" ph="{...}" />
+                <marker date="1545407208158" expanded="true" signature="1554:1652" ph="{...}" />
+                <marker date="1545407208158" expanded="true" signature="1742:1831" ph="/* Quadを画面いっぱいにリサイズ ... */" />
+                <marker date="1545407208158" expanded="true" signature="2084:2263" ph="{...}" />
+                <marker date="1545407208158" expanded="true" signature="2179:2257" ph="{...}" />
+                <marker date="1545407208158" expanded="true" signature="2370:2453" ph="{...}" />
+                <marker date="1545407208158" expanded="true" signature="2479:2527" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/OpenCVForUnity/org/opencv/unity/Utils.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="347">
+              <caret line="330" selection-start-line="330" selection-end-line="330" />
+              <folding>
+                <marker date="1535829821000" expanded="false" signature="6:158" ph="..." />
+                <marker date="1535829821000" expanded="true" signature="184:52446" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="216:52444" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="231:371" ph="/* Returns this &quot;OpenCV for Unity&quot; version number. ... */" />
+                <marker date="1535829821000" expanded="true" signature="414:462" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="472:989" ph="/* Copies OpenCV Mat data to Pixel Data IntPtr. ... */" />
+                <marker date="1535829821000" expanded="true" signature="1053:1577" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="1587:2114" ph="/* Copies Pixel Data IntPtr to OpenCV Mat data. ... */" />
+                <marker date="1535829821000" expanded="true" signature="2176:2701" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="2711:3237" ph="/* Copies OpenCV Mat data to Pixel Data Array. ... */" />
+                <marker date="1535829821000" expanded="true" signature="3305:3955" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="3965:4502" ph="/* Copies Pixel Data Array to OpenCV Mat data. ... */" />
+                <marker date="1535829821000" expanded="true" signature="4568:5230" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="5240:6672" ph="/* Converts OpenCV Mat to Unity Texture2D. ... */" />
+                <marker date="1535829821000" expanded="true" signature="6868:7003" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="7013:8888" ph="/* Converts OpenCV Mat to Unity Texture2D. ... */" />
+                <marker date="1535829821000" expanded="true" signature="9108:15734" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="9585:13966" ph="/* Core.flip (mat, mat, 0); ... */" />
+                <marker date="1535829821000" expanded="true" signature="14404:14831" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="14433:14504" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="14721:14792" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="14914:15274" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="15744:16873" ph="/* Fast converts OpenCV Mat to Unity Texture2D.(Unity5.3+) ... */" />
+                <marker date="1535829821000" expanded="true" signature="17073:18088" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="17538:17635" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="17659:17722" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="17927:17990" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="18098:19101" ph="/* Converts Unity Texture2D to OpenCV Mat. ... */" />
+                <marker date="1535829821000" expanded="true" signature="19210:23207" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="19679:21640" ph="/* byte[] data = new byte[mat.cols () * mat.rows () * mat.channels ()]; ... */" />
+                <marker date="1535829821000" expanded="true" signature="21655:22166" ph="/* ##if UNITY_PRO_LICENSE || ((UNITY_ANDROID || UNITY_IOS || UNITY_WEBGL) &amp;&amp; !UNITY_EDITOR) || UNITY_5 || UNITY_5_ ... */" />
+                <marker date="1535829821000" expanded="true" signature="22607:22809" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="22699:22770" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="23217:23951" ph="/* Fast converts Unity Texture2D to OpenCV Mat.(Unity5.1+) ... */" />
+                <marker date="1535829821000" expanded="true" signature="24064:24763" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="24601:24664" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="24773:25716" ph="/* Converts Unity WebCamTexture to OpenCV Mat. ... */" />
+                <marker date="1535829821000" expanded="true" signature="25837:25932" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="25942:27243" ph="/* Converts Unity WebCamTexture to OpenCV Mat. ... */" />
+                <marker date="1535829821000" expanded="true" signature="27388:32520" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="27873:31043" ph="/* byte[] data = new byte[mat.cols () * mat.rows () * mat.channels ()]; ... */" />
+                <marker date="1535829821000" expanded="true" signature="31945:32116" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="32530:32956" ph="/* Converts Texture to Texture2D. ... */" />
+                <marker date="1535829821000" expanded="true" signature="33041:34309" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="33547:33788" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="34319:34566" ph="/* Register Plugin on WebGL. ... */" />
+                <marker date="1535829821000" expanded="true" signature="34616:34812" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="34822:35446" ph="/* Copies Pixel Data IntPtr to Texture at render thread. ... */" />
+                <marker date="1535829821000" expanded="true" signature="35536:36186" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="36196:36829" ph="/* Copies Pixel Data Array to Texture at render thread. ... */" />
+                <marker date="1535829821000" expanded="true" signature="36922:37698" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="37708:38414" ph="/* Copies OpenCV Mat data to Texture at render thread. ... */" />
+                <marker date="1535829821000" expanded="true" signature="38495:39566" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="39107:39204" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="39576:40619" ph="/* Gets the readable path of a file in the &quot;StreamingAssets&quot; folder. ... */" />
+                <marker date="1535829821000" expanded="true" signature="40700:42418" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="42295:42343" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="42428:43819" ph="/* Gets the readable path of a file in the &quot;StreamingAssets&quot; folder by using coroutines. ... */" />
+                <marker date="1535829821000" expanded="true" signature="43975:47603" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="47038:47333" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="47645:47897" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="47908:48028" ph="/// if true, CvException is thrown instead of calling Debug.LogError (msg). ... " />
+                <marker date="1535829821000" expanded="true" signature="48170:48859" ph="/* Sets the debug mode. ... */" />
+                <marker date="1535829821000" expanded="true" signature="48945:49405" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="49094:49236" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="49645:49823" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="49694:49754" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="49899:50060" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="50135:50296" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="50387:50671" ph="{...}" />
+                <marker date="1535829821000" expanded="true" signature="50478:50636" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/InvisibleConverter.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <marker date="1545404363986" expanded="false" signature="6:126" ph="..." />
+                <marker date="1545404363986" expanded="true" signature="159:2567" ph="{...}" />
+                <marker date="1545404363986" expanded="true" signature="591:625" ph="{...}" />
+                <marker date="1545404363986" expanded="true" signature="631:702" ph="///背景を保存する ... " />
+                <marker date="1545404363986" expanded="true" signature="741:1117" ph="{...}" />
+                <marker date="1545404363986" expanded="true" signature="893:1111" ph="{...}" />
+                <marker date="1545404363986" expanded="true" signature="939:1101" ph="{...}" />
+                <marker date="1545404363986" expanded="true" signature="985:1087" ph="{...}" />
+                <marker date="1545404363986" expanded="true" signature="1127:1255" ph="///肌と髪の領域を背景で置換する ... " />
+                <marker date="1545404363986" expanded="true" signature="1300:2565" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/ShutterHandler.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24">
+              <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+              <folding>
+                <marker date="1545402169061" expanded="false" signature="6:173" ph="..." />
+                <marker date="1545402169061" expanded="true" signature="218:2345" ph="{...}" />
+                <marker date="1545402169061" expanded="true" signature="399:1002" ph="{...}" />
+                <marker date="1545402169061" expanded="true" signature="1034:1189" ph="{...}" />
+                <marker date="1545402169061" expanded="true" signature="1253:1680" ph="{...}" />
+                <marker date="1545402169061" expanded="true" signature="1723:2343" ph="{...}" />
+                <marker date="1545402169061" expanded="true" signature="2175:2293" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/CameraSwitchHandler.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+              <folding>
+                <marker date="1545403195565" expanded="false" signature="6:53" ph="..." />
+                <marker date="1545403195565" expanded="true" signature="104:195" ph="{...}" />
+                <marker date="1545403195565" expanded="true" signature="122:131" ph="{...}" />
+                <marker date="1545403195565" expanded="true" signature="155:193" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -83,8 +264,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/OpenCVForUnity/Examples/WebCamTextureToMatHelper.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10957">
-              <caret line="717" column="27" selection-start-line="717" selection-start-column="27" selection-end-line="717" selection-end-column="27" />
+            <state relative-caret-position="168">
+              <caret line="544" column="20" selection-start-line="544" selection-start-column="20" selection-end-line="544" selection-end-column="20" />
               <folding>
                 <marker date="1535830370000" expanded="false" signature="6:139" ph="..." />
                 <marker date="1535830370000" expanded="true" signature="172:33806" ph="{...}" />
@@ -250,73 +431,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/InvisibleConverter.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-              <folding>
-                <marker date="1545402094861" expanded="false" signature="6:126" ph="..." />
-                <marker date="1545402094861" expanded="true" signature="159:2567" ph="{...}" />
-                <marker date="1545402094861" expanded="true" signature="591:625" ph="{...}" />
-                <marker date="1545402094861" expanded="true" signature="631:702" ph="///背景を保存する ... " />
-                <marker date="1545402094861" expanded="true" signature="741:1117" ph="{...}" />
-                <marker date="1545402094861" expanded="true" signature="893:1111" ph="{...}" />
-                <marker date="1545402094861" expanded="true" signature="939:1101" ph="{...}" />
-                <marker date="1545402094861" expanded="true" signature="985:1087" ph="{...}" />
-                <marker date="1545402094861" expanded="true" signature="1127:1255" ph="///肌と髪の領域を背景で置換する ... " />
-                <marker date="1545402094861" expanded="true" signature="1300:2565" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/ShutterHandler.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-129">
-              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-              <folding>
-                <marker date="1545402169061" expanded="false" signature="6:173" ph="..." />
-                <marker date="1545402169061" expanded="true" signature="218:2345" ph="{...}" />
-                <marker date="1545402169061" expanded="true" signature="399:1002" ph="{...}" />
-                <marker date="1545402169061" expanded="true" signature="1034:1189" ph="{...}" />
-                <marker date="1545402169061" expanded="true" signature="1253:1680" ph="{...}" />
-                <marker date="1545402169061" expanded="true" signature="1723:2343" ph="{...}" />
-                <marker date="1545402169061" expanded="true" signature="2175:2293" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/CameraSwitchHandler.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-              <folding>
-                <marker date="1545403195565" expanded="false" signature="6:53" ph="..." />
-                <marker date="1545403195565" expanded="true" signature="104:195" ph="{...}" />
-                <marker date="1545403195565" expanded="true" signature="122:131" ph="{...}" />
-                <marker date="1545403195565" expanded="true" signature="155:193" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/OpenCVForUnity/Examples/Basic/WebCamTextureToMatHelperExample/WebCamTextureToMatHelperExample.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraSwitchHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/WebCamManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/OpenCVForUnity/org/opencv/unity/Utils.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/OpenCVForUnity/Examples/Basic/WebCamTextureToMatExample/WebCamTextureToMatExample.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/OpenCVForUnity/Examples/WebCamTextureToMatHelper.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/OpenCVForUnity/org/opencv/core/Core.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ToMatHelperManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ShutterHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InvisibleConverter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/OpenCVForUnity/Examples/FpsMonitor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/WebCamManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/OpenCVForUnity/org/opencv/unity/Utils.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/OpenCVForUnity/org/opencv/core/Core.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -326,10 +457,11 @@
         <option value="$PROJECT_DIR$/Assets/ShutterHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InvisibleProcessor.cs" />
         <option value="$PROJECT_DIR$/Assets/CameraSwitchHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/WebCamManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/InvisibleConverter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ShutterHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraSwitchHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InvisibleConverter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ToMatHelperManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WebCamManager.cs" />
       </list>
     </option>
   </component>
@@ -375,9 +507,9 @@
       <option name="pid" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="24161">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="35972">
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="24161" />
+      <option name="pid" value="35972" />
       <method v="2" />
     </configuration>
     <list>
@@ -399,12 +531,12 @@
       <workItem from="1545222535195" duration="6581000" />
       <workItem from="1545231679506" duration="6052000" />
       <workItem from="1545241286712" duration="28823000" />
-      <workItem from="1545375000983" duration="12267000" />
+      <workItem from="1545375000983" duration="15715000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53750000" />
+    <option name="totallyTimeSpent" value="57198000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -420,12 +552,12 @@
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49876237" visible="true" weight="0.19957082" />
-      <window_info active="true" id="Structure" order="1" sideWeight="0.50123763" side_tool="true" visible="true" weight="0.19957082" />
+      <window_info id="Structure" order="1" sideWeight="0.50123763" side_tool="true" visible="true" weight="0.19957082" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" auto_hide="true" id="Debug" order="3" weight="0.39975247" />
+      <window_info anchor="bottom" auto_hide="true" id="Debug" order="3" weight="0.3440594" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -466,13 +598,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/OpenCVForUnity/org/opencv/unity/Utils.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5152">
-          <caret line="328" selection-start-line="328" selection-end-line="328" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/PictureTaker.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Plugins/Android/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -502,6 +627,174 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/OpenCVForUnity/Examples/Basic/WebCamTextureToMatHelperExample/WebCamTextureToMatHelperExample.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="156" column="13" selection-start-line="156" selection-start-column="13" selection-end-line="156" selection-end-column="13" />
+          <folding>
+            <marker date="1535829752000" expanded="false" signature="6:181" ph="..." />
+            <marker date="1535829752000" expanded="true" signature="214:11675" ph="{...}" />
+            <marker date="1535829752000" expanded="true" signature="221:294" ph="/// WebCamTextureToMatHelper Example ... " />
+            <marker date="1535829752000" expanded="true" signature="416:11673" ph="{...}" />
+            <marker date="1535829752000" expanded="true" signature="431:514" ph="/// The requested resolution dropdown. ... " />
+            <marker date="1535829752000" expanded="true" signature="577:651" ph="/// The requested resolution. ... " />
+            <marker date="1535829752000" expanded="true" signature="742:817" ph="/// The requestedFPS dropdown. ... " />
+            <marker date="1535829752000" expanded="true" signature="873:939" ph="/// The requestedFPS. ... " />
+            <marker date="1535829752000" expanded="true" signature="1004:1081" ph="/// The rotate 90 degree toggle. ... " />
+            <marker date="1535829752000" expanded="true" signature="1135:1209" ph="/// The flip vertical toggle. ... " />
+            <marker date="1535829752000" expanded="true" signature="1261:1337" ph="/// The flip horizontal toggle. ... " />
+            <marker date="1535829752000" expanded="true" signature="1391:1452" ph="/// The texture. ... " />
+            <marker date="1535829752000" expanded="true" signature="1489:1571" ph="/// The webcam texture to mat helper. ... " />
+            <marker date="1535829752000" expanded="true" signature="1640:1705" ph="/// The FPS monitor. ... " />
+            <marker date="1535829752000" expanded="true" signature="1798:2858" ph="{...}" />
+            <marker date="1535829752000" expanded="true" signature="2868:2975" ph="/// Raises the webcam texture to mat helper initialized event. ... " />
+            <marker date="1535829752000" expanded="true" signature="3036:5289" ph="{...}" />
+            <marker date="1535829752000" expanded="true" signature="3676:4732" ph="{...}" />
+            <marker date="1535829752000" expanded="true" signature="5079:5199" ph="{...}" />
+            <marker date="1535829752000" expanded="true" signature="5299:5403" ph="/// Raises the webcam texture to mat helper disposed event. ... " />
+            <marker date="1535829752000" expanded="true" signature="5461:5669" ph="{...}" />
+            <marker date="1535829752000" expanded="true" signature="5568:5659" ph="{...}" />
+            <marker date="1535829752000" expanded="true" signature="5679:5845" ph="/// Raises the webcam texture to mat helper error occurred event. ... " />
+            <marker date="1535829752000" expanded="true" signature="5952:6052" ph="{...}" />
+            <marker date="1535829752000" expanded="true" signature="6119:6647" ph="{...}" />
+            <marker date="1535829752000" expanded="true" signature="6235:6637" ph="{...}" />
+            <marker date="1535829752000" expanded="true" signature="6661:6735" ph="/// Raises the destroy event. ... " />
+            <marker date="1535829752000" expanded="true" signature="6761:6830" ph="{...}" />
+            <marker date="1535829752000" expanded="true" signature="6840:6924" ph="/// Raises the back button click event. ... " />
+            <marker date="1535829752000" expanded="true" signature="6965:7193" ph="{...}" />
+            <marker date="1535829752000" expanded="true" signature="7203:7287" ph="/// Raises the play button click event. ... " />
+            <marker date="1535829752000" expanded="true" signature="7328:7394" ph="{...}" />
+            <marker date="1535829752000" expanded="true" signature="7404:7489" ph="/// Raises the pause button click event. ... " />
+            <marker date="1535829752000" expanded="true" signature="7531:7598" ph="{...}" />
+            <marker date="1535829752000" expanded="true" signature="7608:7692" ph="/// Raises the stop button click event. ... " />
+            <marker date="1535829752000" expanded="true" signature="7733:7799" ph="{...}" />
+            <marker date="1535829752000" expanded="true" signature="7809:7902" ph="/// Raises the change camera button click event. ... " />
+            <marker date="1535829752000" expanded="true" signature="7951:8077" ph="{...}" />
+            <marker date="1535829752000" expanded="true" signature="8087:8197" ph="/// Raises the requested resolution dropdown value changed event. ... " />
+            <marker date="1535829752000" expanded="true" signature="8272:8603" ph="{...}" />
+            <marker date="1535829752000" expanded="true" signature="8335:8593" ph="{...}" />
+            <marker date="1535829752000" expanded="true" signature="8613:8715" ph="/// Raises the requestedFPS dropdown value changed event. ... " />
+            <marker date="1535829752000" expanded="true" signature="8783:9151" ph="{...}" />
+            <marker date="1535829752000" expanded="true" signature="9001:9141" ph="{...}" />
+            <marker date="1535829752000" expanded="true" signature="9161:9265" ph="/// Raises the rotate 90 degree toggle value changed event. ... " />
+            <marker date="1535829752000" expanded="true" signature="9323:9670" ph="{...}" />
+            <marker date="1535829752000" expanded="true" signature="9420:9520" ph="{...}" />
+            <marker date="1535829752000" expanded="true" signature="9680:9781" ph="/// Raises the flip vertical toggle value changed event. ... " />
+            <marker date="1535829752000" expanded="true" signature="9837:10172" ph="{...}" />
+            <marker date="1535829752000" expanded="true" signature="9930:10026" ph="{...}" />
+            <marker date="1535829752000" expanded="true" signature="10182:10285" ph="/// Raises the flip horizontal toggle value changed event. ... " />
+            <marker date="1535829752000" expanded="true" signature="10343:10690" ph="{...}" />
+            <marker date="1535829752000" expanded="true" signature="10440:10540" ph="{...}" />
+            <marker date="1535829752000" expanded="true" signature="10727:10895" ph="{...}" />
+            <marker date="1535829752000" expanded="true" signature="10940:11077" ph="{...}" />
+            <marker date="1535829752000" expanded="true" signature="11168:11667" ph="{...}" />
+            <marker date="1535829752000" expanded="true" signature="11198:11657" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/OpenCVForUnity/Examples/Basic/WebCamTextureToMatExample/WebCamTextureToMatExample.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3903">
+          <folding>
+            <marker date="1535830035000" expanded="false" signature="6:159" ph="..." />
+            <marker date="1535830035000" expanded="true" signature="192:12342" ph="{...}" />
+            <marker date="1535830035000" expanded="true" signature="199:345" ph="/// WebCamTextureToMat Example ... " />
+            <marker date="1535830035000" expanded="true" signature="404:12340" ph="{...}" />
+            <marker date="1535830035000" expanded="true" signature="419:502" ph="/// Set the name of the device to use. ... " />
+            <marker date="1535830035000" expanded="true" signature="644:724" ph="/// Set the width of WebCamTexture. ... " />
+            <marker date="1535830035000" expanded="true" signature="862:943" ph="/// Set the height of WebCamTexture. ... " />
+            <marker date="1535830035000" expanded="true" signature="1075:1149" ph="/// Set FPS of WebCamTexture. ... " />
+            <marker date="1535830035000" expanded="true" signature="1270:1362" ph="/// Set whether to use the front facing camera. ... " />
+            <marker date="1535830035000" expanded="true" signature="1515:1583" ph="/// The webcam texture. ... " />
+            <marker date="1535830035000" expanded="true" signature="1630:1697" ph="/// The webcam device. ... " />
+            <marker date="1535830035000" expanded="true" signature="1742:1804" ph="/// The rgba mat. ... " />
+            <marker date="1535830035000" expanded="true" signature="1835:1895" ph="/// The colors. ... " />
+            <marker date="1535830035000" expanded="true" signature="1931:1992" ph="/// The texture. ... " />
+            <marker date="1535830035000" expanded="true" signature="2029:2152" ph="/// Indicates whether this instance is waiting for initialization to complete. ... " />
+            <marker date="1535830035000" expanded="true" signature="2198:2300" ph="/// Indicates whether this instance has been initialized. ... " />
+            <marker date="1535830035000" expanded="true" signature="2344:2409" ph="/// The FPS monitor. ... " />
+            <marker date="1535830035000" expanded="true" signature="2502:2604" ph="{...}" />
+            <marker date="1535830035000" expanded="true" signature="2614:2690" ph="/// Initializes webcam texture. ... " />
+            <marker date="1535830035000" expanded="true" signature="2725:3599" ph="{...}" />
+            <marker date="1535830035000" expanded="true" signature="2851:3201" ph="/* Set the requestedFPS parameter to avoid the problem of the WebCamTexture image becoming low light on some Andr ... */" />
+            <marker date="1535830035000" expanded="true" signature="3609:3698" ph="/// Initializes webcam texture by coroutine. ... " />
+            <marker date="1535830035000" expanded="true" signature="3741:7847" ph="{...}" />
+            <marker date="1535830035000" expanded="true" signature="3940:5100" ph="{...}" />
+            <marker date="1535830035000" expanded="true" signature="4073:4433" ph="{...}" />
+            <marker date="1535830035000" expanded="true" signature="4181:4415" ph="{...}" />
+            <marker date="1535830035000" expanded="true" signature="4546:4935" ph="{...}" />
+            <marker date="1535830035000" expanded="true" signature="4641:4913" ph="{...}" />
+            <marker date="1535830035000" expanded="true" signature="5141:5735" ph="{...}" />
+            <marker date="1535830035000" expanded="true" signature="5325:5721" ph="{...}" />
+            <marker date="1535830035000" expanded="true" signature="5447:5703" ph="{...}" />
+            <marker date="1535830035000" expanded="true" signature="5776:6220" ph="{...}" />
+            <marker date="1535830035000" expanded="true" signature="5832:6035" ph="{...}" />
+            <marker date="1535830035000" expanded="true" signature="6317:7837" ph="{...}" />
+            <marker date="1535830035000" expanded="true" signature="6857:7759" ph="{...}" />
+            <marker date="1535830035000" expanded="true" signature="7857:7928" ph="/// Releases all resource. ... " />
+            <marker date="1535830035000" expanded="true" signature="7960:8478" ph="{...}" />
+            <marker date="1535830035000" expanded="true" signature="8079:8226" ph="{...}" />
+            <marker date="1535830035000" expanded="true" signature="8260:8343" ph="{...}" />
+            <marker date="1535830035000" expanded="true" signature="8377:8468" ph="{...}" />
+            <marker date="1535830035000" expanded="true" signature="8488:8581" ph="/// Raises the webcam texture initialized event. ... " />
+            <marker date="1535830035000" expanded="true" signature="8614:10193" ph="{...}" />
+            <marker date="1535830035000" expanded="true" signature="9486:9724" ph="{...}" />
+            <marker date="1535830035000" expanded="true" signature="9983:10103" ph="{...}" />
+            <marker date="1535830035000" expanded="true" signature="10260:10787" ph="{...}" />
+            <marker date="1535830035000" expanded="true" signature="10363:10777" ph="{...}" />
+            <marker date="1535830035000" expanded="true" signature="10797:10871" ph="/// Raises the destroy event. ... " />
+            <marker date="1535830035000" expanded="true" signature="10897:10941" ph="{...}" />
+            <marker date="1535830035000" expanded="true" signature="10951:11035" ph="/// Raises the back button click event. ... " />
+            <marker date="1535830035000" expanded="true" signature="11076:11304" ph="{...}" />
+            <marker date="1535830035000" expanded="true" signature="11314:11398" ph="/// Raises the play button click event. ... " />
+            <marker date="1535830035000" expanded="true" signature="11439:11527" ph="{...}" />
+            <marker date="1535830035000" expanded="true" signature="11537:11622" ph="/// Raises the pause button click event. ... " />
+            <marker date="1535830035000" expanded="true" signature="11664:11753" ph="{...}" />
+            <marker date="1535830035000" expanded="true" signature="11763:11847" ph="/// Raises the stop button click event. ... " />
+            <marker date="1535830035000" expanded="true" signature="11888:11976" ph="{...}" />
+            <marker date="1535830035000" expanded="true" signature="11986:12079" ph="/// Raises the change camera button click event. ... " />
+            <marker date="1535830035000" expanded="true" signature="12128:12334" ph="{...}" />
+            <marker date="1535830035000" expanded="true" signature="12168:12324" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InvisibleConverter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <marker date="1545404363986" expanded="false" signature="6:126" ph="..." />
+            <marker date="1545404363986" expanded="true" signature="159:2567" ph="{...}" />
+            <marker date="1545404363986" expanded="true" signature="591:625" ph="{...}" />
+            <marker date="1545404363986" expanded="true" signature="631:702" ph="///背景を保存する ... " />
+            <marker date="1545404363986" expanded="true" signature="741:1117" ph="{...}" />
+            <marker date="1545404363986" expanded="true" signature="893:1111" ph="{...}" />
+            <marker date="1545404363986" expanded="true" signature="939:1101" ph="{...}" />
+            <marker date="1545404363986" expanded="true" signature="985:1087" ph="{...}" />
+            <marker date="1545404363986" expanded="true" signature="1127:1255" ph="///肌と髪の領域を背景で置換する ... " />
+            <marker date="1545404363986" expanded="true" signature="1300:2565" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ShutterHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+          <folding>
+            <marker date="1545402169061" expanded="false" signature="6:173" ph="..." />
+            <marker date="1545402169061" expanded="true" signature="218:2345" ph="{...}" />
+            <marker date="1545402169061" expanded="true" signature="399:1002" ph="{...}" />
+            <marker date="1545402169061" expanded="true" signature="1034:1189" ph="{...}" />
+            <marker date="1545402169061" expanded="true" signature="1253:1680" ph="{...}" />
+            <marker date="1545402169061" expanded="true" signature="1723:2343" ph="{...}" />
+            <marker date="1545402169061" expanded="true" signature="2175:2293" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/CameraSwitchHandler.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -517,8 +810,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/OpenCVForUnity/Examples/WebCamTextureToMatHelper.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10957">
-          <caret line="717" column="27" selection-start-line="717" selection-start-column="27" selection-end-line="717" selection-end-column="27" />
+        <state relative-caret-position="168">
+          <caret line="544" column="20" selection-start-line="544" selection-start-column="20" selection-end-line="544" selection-end-column="20" />
           <folding>
             <marker date="1535830370000" expanded="false" signature="6:139" ph="..." />
             <marker date="1535830370000" expanded="true" signature="172:33806" ph="{...}" />
@@ -683,59 +976,150 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/OpenCVForUnity/Examples/FpsMonitor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="67" column="23" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
+          <folding>
+            <marker date="1535829662000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1535829662000" expanded="true" signature="111:5142" ph="{...}" />
+            <marker date="1535829662000" expanded="true" signature="157:5140" ph="{...}" />
+            <marker date="1535829662000" expanded="true" signature="266:378" ph="{...}" />
+            <marker date="1535829662000" expanded="true" signature="1438:1825" ph="{...}" />
+            <marker date="1535829662000" expanded="true" signature="1893:2103" ph="{...}" />
+            <marker date="1535829662000" expanded="true" signature="1985:2093" ph="{...}" />
+            <marker date="1535829662000" expanded="true" signature="2127:3300" ph="{...}" />
+            <marker date="1535829662000" expanded="true" signature="2207:2251" ph="{...}" />
+            <marker date="1535829662000" expanded="true" signature="2363:2414" ph="{...}" />
+            <marker date="1535829662000" expanded="true" signature="2651:2738" ph="{...}" />
+            <marker date="1535829662000" expanded="true" signature="2881:3290" ph="{...}" />
+            <marker date="1535829662000" expanded="true" signature="2915:2983" ph="{...}" />
+            <marker date="1535829662000" expanded="true" signature="3353:3534" ph="{...}" />
+            <marker date="1535829662000" expanded="true" signature="3401:3458" ph="{...}" />
+            <marker date="1535829662000" expanded="true" signature="3576:3624" ph="{...}" />
+            <marker date="1535829662000" expanded="true" signature="3655:3699" ph="{...}" />
+            <marker date="1535829662000" expanded="true" signature="3745:4383" ph="{...}" />
+            <marker date="1535829662000" expanded="true" signature="4450:4764" ph="{...}" />
+            <marker date="1535829662000" expanded="true" signature="4480:4754" ph="{...}" />
+            <marker date="1535829662000" expanded="true" signature="4819:5134" ph="{...}" />
+            <marker date="1535829662000" expanded="true" signature="4849:5124" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/OpenCVForUnity/org/opencv/unity/Utils.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="330" selection-start-line="330" selection-end-line="330" />
+          <folding>
+            <marker date="1535829821000" expanded="false" signature="6:158" ph="..." />
+            <marker date="1535829821000" expanded="true" signature="184:52446" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="216:52444" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="231:371" ph="/* Returns this &quot;OpenCV for Unity&quot; version number. ... */" />
+            <marker date="1535829821000" expanded="true" signature="414:462" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="472:989" ph="/* Copies OpenCV Mat data to Pixel Data IntPtr. ... */" />
+            <marker date="1535829821000" expanded="true" signature="1053:1577" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="1587:2114" ph="/* Copies Pixel Data IntPtr to OpenCV Mat data. ... */" />
+            <marker date="1535829821000" expanded="true" signature="2176:2701" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="2711:3237" ph="/* Copies OpenCV Mat data to Pixel Data Array. ... */" />
+            <marker date="1535829821000" expanded="true" signature="3305:3955" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="3965:4502" ph="/* Copies Pixel Data Array to OpenCV Mat data. ... */" />
+            <marker date="1535829821000" expanded="true" signature="4568:5230" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="5240:6672" ph="/* Converts OpenCV Mat to Unity Texture2D. ... */" />
+            <marker date="1535829821000" expanded="true" signature="6868:7003" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="7013:8888" ph="/* Converts OpenCV Mat to Unity Texture2D. ... */" />
+            <marker date="1535829821000" expanded="true" signature="9108:15734" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="9585:13966" ph="/* Core.flip (mat, mat, 0); ... */" />
+            <marker date="1535829821000" expanded="true" signature="14404:14831" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="14433:14504" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="14721:14792" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="14914:15274" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="15744:16873" ph="/* Fast converts OpenCV Mat to Unity Texture2D.(Unity5.3+) ... */" />
+            <marker date="1535829821000" expanded="true" signature="17073:18088" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="17538:17635" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="17659:17722" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="17927:17990" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="18098:19101" ph="/* Converts Unity Texture2D to OpenCV Mat. ... */" />
+            <marker date="1535829821000" expanded="true" signature="19210:23207" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="19679:21640" ph="/* byte[] data = new byte[mat.cols () * mat.rows () * mat.channels ()]; ... */" />
+            <marker date="1535829821000" expanded="true" signature="21655:22166" ph="/* ##if UNITY_PRO_LICENSE || ((UNITY_ANDROID || UNITY_IOS || UNITY_WEBGL) &amp;&amp; !UNITY_EDITOR) || UNITY_5 || UNITY_5_ ... */" />
+            <marker date="1535829821000" expanded="true" signature="22607:22809" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="22699:22770" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="23217:23951" ph="/* Fast converts Unity Texture2D to OpenCV Mat.(Unity5.1+) ... */" />
+            <marker date="1535829821000" expanded="true" signature="24064:24763" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="24601:24664" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="24773:25716" ph="/* Converts Unity WebCamTexture to OpenCV Mat. ... */" />
+            <marker date="1535829821000" expanded="true" signature="25837:25932" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="25942:27243" ph="/* Converts Unity WebCamTexture to OpenCV Mat. ... */" />
+            <marker date="1535829821000" expanded="true" signature="27388:32520" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="27873:31043" ph="/* byte[] data = new byte[mat.cols () * mat.rows () * mat.channels ()]; ... */" />
+            <marker date="1535829821000" expanded="true" signature="31945:32116" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="32530:32956" ph="/* Converts Texture to Texture2D. ... */" />
+            <marker date="1535829821000" expanded="true" signature="33041:34309" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="33547:33788" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="34319:34566" ph="/* Register Plugin on WebGL. ... */" />
+            <marker date="1535829821000" expanded="true" signature="34616:34812" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="34822:35446" ph="/* Copies Pixel Data IntPtr to Texture at render thread. ... */" />
+            <marker date="1535829821000" expanded="true" signature="35536:36186" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="36196:36829" ph="/* Copies Pixel Data Array to Texture at render thread. ... */" />
+            <marker date="1535829821000" expanded="true" signature="36922:37698" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="37708:38414" ph="/* Copies OpenCV Mat data to Texture at render thread. ... */" />
+            <marker date="1535829821000" expanded="true" signature="38495:39566" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="39107:39204" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="39576:40619" ph="/* Gets the readable path of a file in the &quot;StreamingAssets&quot; folder. ... */" />
+            <marker date="1535829821000" expanded="true" signature="40700:42418" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="42295:42343" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="42428:43819" ph="/* Gets the readable path of a file in the &quot;StreamingAssets&quot; folder by using coroutines. ... */" />
+            <marker date="1535829821000" expanded="true" signature="43975:47603" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="47038:47333" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="47645:47897" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="47908:48028" ph="/// if true, CvException is thrown instead of calling Debug.LogError (msg). ... " />
+            <marker date="1535829821000" expanded="true" signature="48170:48859" ph="/* Sets the debug mode. ... */" />
+            <marker date="1535829821000" expanded="true" signature="48945:49405" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="49094:49236" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="49645:49823" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="49694:49754" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="49899:50060" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="50135:50296" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="50387:50671" ph="{...}" />
+            <marker date="1535829821000" expanded="true" signature="50478:50636" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/WebCamManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="48" column="51" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
+        <state relative-caret-position="527">
+          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
           <folding>
-            <marker date="1545402072866" expanded="true" signature="6:103" ph="..." />
-            <marker date="1545402072866" expanded="true" signature="220:3299" ph="{...}" />
-            <marker date="1545402072866" expanded="true" signature="429:753" ph="{...}" />
-            <marker date="1545402072866" expanded="true" signature="776:1281" ph="{...}" />
-            <marker date="1545402072866" expanded="true" signature="1078:1145" ph="{...}" />
-            <marker date="1545402072866" expanded="true" signature="1342:2806" ph="{...}" />
-            <marker date="1545402072866" expanded="true" signature="1816:2057" ph="{...}" />
-            <marker date="1545402072866" expanded="true" signature="2337:2435" ph="{...}" />
-            <marker date="1545402072866" expanded="true" signature="2525:2614" ph="/* Quadを画面いっぱいにリサイズ ... */" />
-            <marker date="1545402072866" expanded="true" signature="2861:3033" ph="{...}" />
-            <marker date="1545402072866" expanded="true" signature="2956:3027" ph="{...}" />
-            <marker date="1545402072866" expanded="true" signature="3140:3223" ph="{...}" />
-            <marker date="1545402072866" expanded="true" signature="3249:3297" ph="{...}" />
+            <marker date="1545407219977" expanded="true" signature="6:103" ph="..." />
+            <marker date="1545407219977" expanded="true" signature="220:1909" ph="{...}" />
+            <marker date="1545407219977" expanded="true" signature="473:912" ph="{...}" />
+            <marker date="1545407219977" expanded="true" signature="935:1440" ph="{...}" />
+            <marker date="1545407219977" expanded="true" signature="1237:1304" ph="{...}" />
+            <marker date="1545407219977" expanded="true" signature="1497:1585" ph="{...}" />
+            <marker date="1545407219977" expanded="true" signature="1640:1713" ph="{...}" />
+            <marker date="1545407219977" expanded="true" signature="1820:1907" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InvisibleConverter.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ToMatHelperManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        <state relative-caret-position="523">
+          <caret line="49" column="75" selection-start-line="49" selection-start-column="75" selection-end-line="49" selection-end-column="75" />
           <folding>
-            <marker date="1545402094861" expanded="false" signature="6:126" ph="..." />
-            <marker date="1545402094861" expanded="true" signature="159:2567" ph="{...}" />
-            <marker date="1545402094861" expanded="true" signature="591:625" ph="{...}" />
-            <marker date="1545402094861" expanded="true" signature="631:702" ph="///背景を保存する ... " />
-            <marker date="1545402094861" expanded="true" signature="741:1117" ph="{...}" />
-            <marker date="1545402094861" expanded="true" signature="893:1111" ph="{...}" />
-            <marker date="1545402094861" expanded="true" signature="939:1101" ph="{...}" />
-            <marker date="1545402094861" expanded="true" signature="985:1087" ph="{...}" />
-            <marker date="1545402094861" expanded="true" signature="1127:1255" ph="///肌と髪の領域を背景で置換する ... " />
-            <marker date="1545402094861" expanded="true" signature="1300:2565" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ShutterHandler.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-129">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-          <folding>
-            <marker date="1545402169061" expanded="false" signature="6:173" ph="..." />
-            <marker date="1545402169061" expanded="true" signature="218:2345" ph="{...}" />
-            <marker date="1545402169061" expanded="true" signature="399:1002" ph="{...}" />
-            <marker date="1545402169061" expanded="true" signature="1034:1189" ph="{...}" />
-            <marker date="1545402169061" expanded="true" signature="1253:1680" ph="{...}" />
-            <marker date="1545402169061" expanded="true" signature="1723:2343" ph="{...}" />
-            <marker date="1545402169061" expanded="true" signature="2175:2293" ph="{...}" />
+            <marker date="1545407208158" expanded="true" signature="6:47" ph="..." />
+            <marker date="1545407208158" expanded="true" signature="80:2529" ph="{...}" />
+            <marker date="1545407208158" expanded="true" signature="333:471" ph="{...}" />
+            <marker date="1545407208158" expanded="true" signature="553:2029" ph="{...}" />
+            <marker date="1545407208158" expanded="true" signature="1033:1274" ph="{...}" />
+            <marker date="1545407208158" expanded="true" signature="1554:1652" ph="{...}" />
+            <marker date="1545407208158" expanded="true" signature="1742:1831" ph="/* Quadを画面いっぱいにリサイズ ... */" />
+            <marker date="1545407208158" expanded="true" signature="2084:2263" ph="{...}" />
+            <marker date="1545407208158" expanded="true" signature="2179:2257" ph="{...}" />
+            <marker date="1545407208158" expanded="true" signature="2370:2453" ph="{...}" />
+            <marker date="1545407208158" expanded="true" signature="2479:2527" ph="{...}" />
           </folding>
         </state>
       </provider>

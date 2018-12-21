@@ -1,6 +1,10 @@
 ﻿using OpenCVForUnityExample;
 using UnityEngine;
 
+/// <summary>
+/// WebCamTextureToMatHelperの初期化・破棄を行う．
+/// WebCamManagerに統合してもいいけど長くなるので分けた
+/// </summary>
 public class ToMatHelperManager
 {
     GameObject _quad;

@@ -13,7 +13,7 @@ public class InvisibleConverter
     static readonly Scalar HAIR_UPPER = new Scalar(180, 120, 80);
 
     /// <summary>背景を保存したかどうか</summary>
-    public bool HasSavedBgr { get; private set; }
+    public bool HasSavedBgr { get; set; }
 
     public InvisibleConverter(Text text)
     {

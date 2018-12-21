@@ -2,10 +2,10 @@
 using System.Collections;
 using System.IO;
 using UnityEngine;
-using UnityEngine.UI;
-using static OpenCVForUnity.Imgproc;
-using static OpenCVForUnity.Imgcodecs;
 
+/// <summary>
+/// シャッターが押されたら音を鳴らしてスクリーンショットを保存する
+/// </summary>
 public class ShutterHandler : MonoBehaviour
 {
 	[SerializeField] Canvas _canvas;
@@ -19,7 +19,7 @@ public class ShutterHandler : MonoBehaviour
 		_shutter = GetComponent<AudioSource>();
 		
 		#if !UNITY_EDITOR && UNITY_ANDROID
-		// 保存パスを取得	https://qiita.com/fukaken5050/items/9619aeeb131120939bc1
+		//ギャラリーに表示される保存パスを取得	https://qiita.com/fukaken5050/items/9619aeeb131120939bc1
 		using(var jcEnvironment = new AndroidJavaClass("android.os.Environment"))
 		using(var joPublicDir = jcEnvironment.CallStatic<AndroidJavaObject>(
 			"getExternalStoragePublicDirectory",

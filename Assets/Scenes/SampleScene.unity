@@ -189,8 +189,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1901015534}
-        m_MethodName: OnClick
+      - m_Target: {fileID: 887664902}
+        m_MethodName: OnCameraSwitch
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

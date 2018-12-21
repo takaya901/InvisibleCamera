@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b8bd20b-a47b-4c17-a50c-1a7793ed047b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.InvisibleCamera/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.InvisibleCamera/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InvisibleConverter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InvisibleConverter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShutterHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShutterHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ToMatHelperManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ToMatHelperManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WebCamManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WebCamManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/shutter.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/shutter.mp3.meta" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -436,12 +433,12 @@
       <workItem from="1545222535195" duration="6581000" />
       <workItem from="1545231679506" duration="6052000" />
       <workItem from="1545241286712" duration="28823000" />
-      <workItem from="1545375000983" duration="21266000" />
+      <workItem from="1545375000983" duration="21498000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62749000" />
+    <option name="totallyTimeSpent" value="62981000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

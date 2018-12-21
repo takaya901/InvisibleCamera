@@ -6,27 +6,18 @@ using static OpenCVForUnity.Core;
 public static class InvisibleProcessor
 {
     static Mat _background;
-    static double _screenArea;    //ノイズ除去に使用
     static readonly Scalar SKIN_LOWER = new Scalar(0, 40, 60);
     static readonly Scalar SKIN_UPPER = new Scalar(20, 255, 255);
     static readonly Scalar HAIR_LOWER = new Scalar(0, 0, 0);    
     static readonly Scalar HAIR_UPPER = new Scalar(180, 120, 80);
 
-    static InvisibleProcessor()
-    {
-        _screenArea = Screen.width * Screen.height;
-    }
+    /// <summary>背景を保存したかどうか</summary>
+    public static bool HasSavedBackground => _background != null;
 
     public static void SaveBackground(Mat webcamMat)
     {
         _background = webcamMat.clone();
     }
-
-    /// <summary>背景を保存したかどうか</summary>
-    public static bool HasSavedBackground()
-    {
-        return _background != null;
-    }   
     
     /// <summary>肌と髪の領域を背景で置換する</summary>
     /// <param name="webcamMat">カメラからのRGBA画像</param>

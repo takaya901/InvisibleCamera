@@ -681,8 +681,6 @@ GameObject:
   - component: {fileID: 1850747861}
   - component: {fileID: 1850747860}
   - component: {fileID: 1850747859}
-  - component: {fileID: 1850747862}
-  - component: {fileID: 1850747863}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -748,8 +746,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1850747862}
-        m_MethodName: OnClick
+      - m_Target: {fileID: 1901015531}
+        m_MethodName: OnShutterClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -795,24 +793,55 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1850747857}
   m_CullTransparentMesh: 0
---- !u!114 &1850747862
+--- !u!1 &1901015530
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1901015532}
+  - component: {fileID: 1901015531}
+  - component: {fileID: 1901015533}
+  m_Layer: 0
+  m_Name: ScreenShotManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1901015531
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1850747857}
+  m_GameObject: {fileID: 1901015530}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f11e8f3d76d924cb4840fc2edcdde34c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _canvas: {fileID: 1030855313}
   _text: {fileID: 1441476531}
---- !u!82 &1850747863
+--- !u!4 &1901015532
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1901015530}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 692, y: 432, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1901015533
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1850747857}
+  m_GameObject: {fileID: 1901015530}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}

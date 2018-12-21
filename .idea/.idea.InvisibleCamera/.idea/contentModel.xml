@@ -553,19 +553,10 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="InvisibleProcessor.cs" t="Include" />
+          <e p="CameraSwitchHandler.cs" t="Include" />
+          <e p="InvisibleConverter.cs" t="Include" />
           <e p="ShutterHandler.cs" t="Include" />
           <e p="WebCamManager.cs" t="Include" />
-        </e>
-        <e p="StreamingAssets" t="Include">
-          <e p="haarcascade_frontalface_alt.xml" t="Include" />
-          <e p="lbpcascade_frontalface.xml" t="Include" />
-          <e p="text" t="Include">
-            <e p="OCRHMM_transitions_table.xml" t="Include" />
-            <e p="trained_classifier_erGrouping.xml" t="Include" />
-            <e p="trained_classifierNM1.xml" t="Include" />
-            <e p="trained_classifierNM2.xml" t="Include" />
-          </e>
         </e>
       </e>
       <e p="InvisibleCamera.sln" t="IncludeFlat" />

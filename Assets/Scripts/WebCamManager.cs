@@ -1,60 +1,54 @@
-﻿using System.Collections.Generic;
-using OpenCVForUnity;
+﻿using OpenCVForUnity;
 using OpenCVForUnityExample;
 using UnityEngine;
-using static OpenCVForUnity.Imgproc;
-using static OpenCVForUnity.Core;
+using Text = UnityEngine.UI.Text;
 
 [RequireComponent(typeof(WebCamTextureToMatHelper), typeof(FpsMonitor))]
 public class WebCamManager : MonoBehaviour
 {
-    Texture2D _texture;
-    static WebCamTextureToMatHelper _webCamTextureToMatHelper;
+    [SerializeField] Text _text;
+    Texture2D _quadTex;
+    WebCamTextureToMatHelper _texToMatHelper;
     FpsMonitor _fpsMonitor;
-//    InvisibleProcessor _invisibleProcessor = new InvisibleProcessor();
+    InvisibleConverter _invCvtr;
     float _time = 5;
     
     void Start()
     {
+        _invCvtr = new InvisibleConverter(_text);
         Input.backButtonLeavesApp = true;
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
         
         _fpsMonitor = GetComponent<FpsMonitor>();
-        _webCamTextureToMatHelper = GetComponent<WebCamTextureToMatHelper>();
-        _webCamTextureToMatHelper.Initialize();
+        _texToMatHelper = GetComponent<WebCamTextureToMatHelper>();
+        _texToMatHelper.Initialize();
     }
     
     void Update()
     {
-        #if !UNITY_EDITOR
-//        if (_time > 0) {
-//            _time -= Time.deltaTime;
-//            return;
-//        }
-        #endif
-        
-        if (!_webCamTextureToMatHelper.IsPlaying() || !_webCamTextureToMatHelper.DidUpdateThisFrame()) return;
-
-        if (!InvisibleProcessor.HasSavedBackground) {
-            InvisibleProcessor.SaveBackground(_webCamTextureToMatHelper.GetMat());
+        #if !UNITY_EDITOR && UNITY_ANDROID
+        if (_time > 0) {
+            _time -= Time.deltaTime;
+            return;
         }
-//        var rgbaMat = _webCamTextureToMatHelper.GetMat();
-        var rgbaMat = InvisibleProcessor.ConvertToInvisible(_webCamTextureToMatHelper.GetMat());
-        Utils.fastMatToTexture2D(rgbaMat, _texture);
-    }
+        #endif
+        if (!_texToMatHelper.IsPlaying() || !_texToMatHelper.DidUpdateThisFrame()) return;
 
-    public static Mat GetWebCamMat()
-    {
-        return _webCamTextureToMatHelper.GetMat();
+        //背景を保存する
+        if (!_invCvtr.HasSavedBgr) {
+            _invCvtr.SaveBgr(_texToMatHelper.GetMat());
+        }
+        var webCamMat = _invCvtr.CvtToInvisible(_texToMatHelper.GetMat());
+        Utils.fastMatToTexture2D(webCamMat, _quadTex);
     }
     
     public void OnWebCamTextureToMatHelperInitialized()
     {
         Debug.Log ("OnWebCamTextureToMatHelperInitialized");
 
-        var webCamTextureMat = _webCamTextureToMatHelper.GetMat();
-        _texture = new Texture2D (webCamTextureMat.cols(), webCamTextureMat.rows(), TextureFormat.RGBA32, false);
-        GetComponent<Renderer>().material.mainTexture = _texture;
+        var webCamTextureMat = _texToMatHelper.GetMat();
+        _quadTex = new Texture2D (webCamTextureMat.cols(), webCamTextureMat.rows(), TextureFormat.RGBA32, false);
+        GetComponent<Renderer>().material.mainTexture = _quadTex;
 
         Debug.Log ("Screen.width " + Screen.width + " Screen.height " + Screen.height + " Screen.orientation " + Screen.orientation);
 
@@ -80,16 +74,14 @@ public class WebCamManager : MonoBehaviour
         var quadHeight = Camera.main.orthographicSize * 2;
         var quadWidth = quadHeight * Camera.main.aspect;
         transform.localScale = new Vector3(quadWidth, quadHeight, 1);
-        
-//        _invisibleProcessor.SaveBackground(_webCamTextureToMatHelper.GetMat());
     }
 
     public void OnWebCamTextureToMatHelperDisposed ()
     {
         Debug.Log ("OnWebCamTextureToMatHelperDisposed");
-        if (_texture != null) {
-            Destroy(_texture);
-            _texture = null;
+        if (_quadTex != null) {
+            Destroy(_quadTex);
+            _quadTex = null;
         }
     }
     
@@ -99,6 +91,6 @@ public class WebCamManager : MonoBehaviour
     
     void OnDestroy()
     {
-        _webCamTextureToMatHelper.Dispose ();
+        _texToMatHelper.Dispose ();
     }
 }

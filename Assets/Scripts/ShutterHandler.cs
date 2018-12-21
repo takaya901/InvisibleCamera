@@ -9,11 +9,10 @@ using static OpenCVForUnity.Imgcodecs;
 public class ShutterHandler : MonoBehaviour
 {
 	[SerializeField] Canvas _canvas;
-	[SerializeField] Text _text;
 	AudioSource _shutter;
 	string _imgSavePath = "";
-	const string EXTENSION = ".jpg";
-	const string IMG_SAVE_DIRECTORIY = "/Invisible/";
+	const string EXT = ".jpg";
+	const string IMG_SAVE_DIR = "/InvisibleCamera/";
 	
 	void Start ()
 	{
@@ -26,7 +25,7 @@ public class ShutterHandler : MonoBehaviour
 			"getExternalStoragePublicDirectory",
 			jcEnvironment.GetStatic<string>("DIRECTORY_PICTURES"))) {
 			var outputPath = joPublicDir.Call<string>("toString");
-			_imgSavePath = outputPath + IMG_SAVE_DIRECTORIY;
+			_imgSavePath = outputPath + IMG_SAVE_DIR;
 			if (!Directory.Exists(_imgSavePath)) Directory.CreateDirectory(_imgSavePath);
 		}
 		#endif
@@ -35,7 +34,7 @@ public class ShutterHandler : MonoBehaviour
 	public void OnShutterClick()
 	{
 		_shutter.Play();
-		var imgName = DateTime.Now.ToString("yyyyMMdd_HHmmss") + EXTENSION;
+		var imgName = DateTime.Now.ToString("yyyyMMdd_HHmmss") + EXT;
 		_imgSavePath += imgName;
 		StartCoroutine(CaptureScreenshot());
 	}
@@ -45,12 +44,6 @@ public class ShutterHandler : MonoBehaviour
 	{
 		_canvas.gameObject.SetActive(false);
 		var screenShot = new Texture2D(Screen.width, Screen.height, TextureFormat.RGB24, false);
-//		var withoutUI = new RenderTexture(screenShot.width, screenShot.height, 24);
-//		var withUI = Camera.main.targetTexture;
-//		Camera.main.targetTexture = withoutUI;
-//		Camera.main.Render();
-//		Camera.main.targetTexture = withUI;
-//		RenderTexture.active = withoutUI;
 		yield return new WaitForEndOfFrame();
 
 		screenShot.ReadPixels(new Rect(0, 0, screenShot.width, screenShot.height), 0, 0);

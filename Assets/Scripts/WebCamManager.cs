@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using OpenCVForUnity;
 using OpenCVForUnityExample;
 using UnityEngine;
@@ -22,35 +23,31 @@ public class WebCamManager : MonoBehaviour
     InvisibleConverter _invCvtr;
     FpsMonitor _fpsMonitor;
 
-    const float TIME_WAIT_CAMERA = 5f;              //カメラ起動を待つ時間
-    float _remainingWaitingTime = TIME_WAIT_CAMERA; //残り待ち時間
+    const int TIME_WAIT_CAMERA = 5000;    //カメラ起動を待つ時間（ms）
     
     void Start()
     {
         Input.backButtonLeavesApp = true;
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
         
-        _invCvtr = new InvisibleConverter(_text);
-        _fpsMonitor = GetComponent<FpsMonitor>();
         _toMatHelper = GetComponent<WebCamTextureToMatHelper>();
+        _invCvtr = new InvisibleConverter(_text);
         _cameraSwitcher = new CameraSwitcher(_toMatHelper, _invCvtr, _mainCanvas, _camSwitchDialog);
+        _fpsMonitor = GetComponent<FpsMonitor>();
         
         //リア/フロントをPlayerPrefabsから読み込む
-        var useCamera = _cameraSwitcher.UseCamera;
-        _toMatHelper.requestedIsFrontFacing = useCamera;
+        _toMatHelper.requestedIsFrontFacing = _cameraSwitcher.UseCamera;
         _toMatHelperMgr = new ToMatHelperManager(gameObject, _toMatHelper, _fpsMonitor);
         _toMatHelper.Initialize();
+
+        //スマホの場合カメラ起動まで指定秒待つ
+        #if !UNITY_EDITOR && UNITY_ANDROID
+        Task.Run(WaitCamStartup).Wait();
+        #endif
     }
     
     void Update()
     {
-        #if !UNITY_EDITOR && UNITY_ANDROID
-        //起動時とカメラ切替時にカメラ起動まで待つ
-        if (_remainingWaitingTime > 0) {
-            _remainingWaitingTime -= Time.deltaTime;
-            return;
-        }
-        #endif
         if (!_toMatHelper.IsPlaying() || !_toMatHelper.DidUpdateThisFrame()) return;
 
         //背景を保存する．Startでやるとカメラ起動前に実行されてしまう
@@ -63,6 +60,11 @@ public class WebCamManager : MonoBehaviour
         Utils.fastMatToTexture2D(webCamMat, _quadTex);
     }
 
+    async Task WaitCamStartup()
+    {
+        await Task.Delay(TIME_WAIT_CAMERA);
+    }
+
     //カメラ切り替えボタンが押されたら確認ダイアログを表示
     public void OnSwitcherTouched()
     {
@@ -72,19 +74,14 @@ public class WebCamManager : MonoBehaviour
     //OKが押されたらリアカメラとフロントカメラを切り替える
     public void OnCameraSwitch()
     {
-        ResetWaitingTime(); //カメラ起動するまで待つ
         _cameraSwitcher.OnCameraSwitch();
+        Task.Run(WaitCamStartup).Wait(); //カメラ起動するまで待つ
     }
 
     //キャンセルが押されたらダイアログ消去
     public void OnSwtichCancel()
     {
         _cameraSwitcher.OnSwtichCancel();
-    }
-
-    void ResetWaitingTime()
-    {
-        _remainingWaitingTime = TIME_WAIT_CAMERA;
     }
 
     //WebCamTextureToMatHelperの初期化・破棄・エラー処理

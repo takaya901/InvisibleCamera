@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b8bd20b-a47b-4c17-a50c-1a7793ed047b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.InvisibleCamera/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.InvisibleCamera/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.InvisibleCamera/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.InvisibleCamera/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraSwitchHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraSwitchHandler.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/WebCamManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WebCamManager.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,13 +24,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="6660" />
+          <entry key="cs" value="6879" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="6660" />
+          <entry key="C#" value="6879" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -58,22 +53,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/WebCamManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-310">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="588">
+              <caret line="76" column="41" selection-start-line="76" selection-start-column="41" selection-end-line="76" selection-end-column="41" />
               <folding>
-                <marker date="1545500275019" expanded="true" signature="6:117" ph="..." />
-                <marker date="1545500275019" expanded="true" signature="119:204" ph="/// カメラ映像を透明人間に変換してQuadに投影する． ... " />
-                <marker date="1545500275019" expanded="true" signature="320:3331" ph="{...}" />
-                <marker date="1545500275019" expanded="true" signature="979:1642" ph="{...}" />
-                <marker date="1545500275019" expanded="true" signature="1665:2277" ph="{...}" />
-                <marker date="1545500275019" expanded="true" signature="2049:2113" ph="{...}" />
-                <marker date="1545500275019" expanded="true" signature="2347:2404" ph="{...}" />
-                <marker date="1545500275019" expanded="true" signature="2476:2572" ph="{...}" />
-                <marker date="1545500275019" expanded="true" signature="2631:2685" ph="{...}" />
-                <marker date="1545500275019" expanded="true" signature="2714:2776" ph="{...}" />
-                <marker date="1545500275019" expanded="true" signature="2877:3003" ph="{...}" />
-                <marker date="1545500275019" expanded="true" signature="3058:3139" ph="{...}" />
-                <marker date="1545500275019" expanded="true" signature="3246:3329" ph="{...}" />
+                <marker date="1545503100490" expanded="true" signature="6:147" ph="..." />
+                <marker date="1545503100490" expanded="true" signature="149:234" ph="/// カメラ映像を透明人間に変換してQuadに投影する． ... " />
+                <marker date="1545503100490" expanded="true" signature="350:3186" ph="{...}" />
+                <marker date="1545503100490" expanded="true" signature="942:1699" ph="{...}" />
+                <marker date="1545503100490" expanded="true" signature="1722:2121" ph="{...}" />
+                <marker date="1545503100490" expanded="true" signature="1893:1957" ph="{...}" />
+                <marker date="1545503100490" expanded="true" signature="2154:2210" ph="{...}" />
+                <marker date="1545503100490" expanded="true" signature="2280:2337" ph="{...}" />
+                <marker date="1545503100490" expanded="true" signature="2409:2518" ph="{...}" />
+                <marker date="1545503100490" expanded="true" signature="2577:2631" ph="{...}" />
+                <marker date="1545503100490" expanded="true" signature="2732:2858" ph="{...}" />
+                <marker date="1545503100490" expanded="true" signature="2913:2994" ph="{...}" />
+                <marker date="1545503100490" expanded="true" signature="3101:3184" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -82,8 +77,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/CameraSwitcher.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+            <state relative-caret-position="15">
+              <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
               <folding>
                 <marker date="1545500346391" expanded="true" signature="6:61" ph="..." />
                 <marker date="1545500346391" expanded="true" signature="63:112" ph="/// リア/フロントカメラを切り替える ... " />
@@ -365,8 +360,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ToMatHelperManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ShutterHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InvisibleConverter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/WebCamManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraSwitcher.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WebCamManager.cs" />
       </list>
     </option>
   </component>
@@ -436,12 +431,12 @@
       <workItem from="1545222535195" duration="6581000" />
       <workItem from="1545231679506" duration="6052000" />
       <workItem from="1545241286712" duration="28823000" />
-      <workItem from="1545375000983" duration="30137000" />
+      <workItem from="1545375000983" duration="32303000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71620000" />
+    <option name="totallyTimeSpent" value="73786000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1144,8 +1139,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/CameraSwitcher.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+        <state relative-caret-position="15">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
           <folding>
             <marker date="1545500346391" expanded="true" signature="6:61" ph="..." />
             <marker date="1545500346391" expanded="true" signature="63:112" ph="/// リア/フロントカメラを切り替える ... " />
@@ -1161,22 +1156,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/WebCamManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-310">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="588">
+          <caret line="76" column="41" selection-start-line="76" selection-start-column="41" selection-end-line="76" selection-end-column="41" />
           <folding>
-            <marker date="1545500275019" expanded="true" signature="6:117" ph="..." />
-            <marker date="1545500275019" expanded="true" signature="119:204" ph="/// カメラ映像を透明人間に変換してQuadに投影する． ... " />
-            <marker date="1545500275019" expanded="true" signature="320:3331" ph="{...}" />
-            <marker date="1545500275019" expanded="true" signature="979:1642" ph="{...}" />
-            <marker date="1545500275019" expanded="true" signature="1665:2277" ph="{...}" />
-            <marker date="1545500275019" expanded="true" signature="2049:2113" ph="{...}" />
-            <marker date="1545500275019" expanded="true" signature="2347:2404" ph="{...}" />
-            <marker date="1545500275019" expanded="true" signature="2476:2572" ph="{...}" />
-            <marker date="1545500275019" expanded="true" signature="2631:2685" ph="{...}" />
-            <marker date="1545500275019" expanded="true" signature="2714:2776" ph="{...}" />
-            <marker date="1545500275019" expanded="true" signature="2877:3003" ph="{...}" />
-            <marker date="1545500275019" expanded="true" signature="3058:3139" ph="{...}" />
-            <marker date="1545500275019" expanded="true" signature="3246:3329" ph="{...}" />
+            <marker date="1545503100490" expanded="true" signature="6:147" ph="..." />
+            <marker date="1545503100490" expanded="true" signature="149:234" ph="/// カメラ映像を透明人間に変換してQuadに投影する． ... " />
+            <marker date="1545503100490" expanded="true" signature="350:3186" ph="{...}" />
+            <marker date="1545503100490" expanded="true" signature="942:1699" ph="{...}" />
+            <marker date="1545503100490" expanded="true" signature="1722:2121" ph="{...}" />
+            <marker date="1545503100490" expanded="true" signature="1893:1957" ph="{...}" />
+            <marker date="1545503100490" expanded="true" signature="2154:2210" ph="{...}" />
+            <marker date="1545503100490" expanded="true" signature="2280:2337" ph="{...}" />
+            <marker date="1545503100490" expanded="true" signature="2409:2518" ph="{...}" />
+            <marker date="1545503100490" expanded="true" signature="2577:2631" ph="{...}" />
+            <marker date="1545503100490" expanded="true" signature="2732:2858" ph="{...}" />
+            <marker date="1545503100490" expanded="true" signature="2913:2994" ph="{...}" />
+            <marker date="1545503100490" expanded="true" signature="3101:3184" ph="{...}" />
           </folding>
         </state>
       </provider>

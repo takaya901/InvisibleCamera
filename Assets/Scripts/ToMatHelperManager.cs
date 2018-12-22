@@ -3,7 +3,7 @@ using UnityEngine;
 
 /// <summary>
 /// WebCamTextureToMatHelperの初期化・破棄を行う．
-/// WebCamManagerに統合してもいいけど長くなるので分けた
+/// WebCamManagerに書くと長いので分けた
 /// </summary>
 public class ToMatHelperManager
 {

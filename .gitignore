@@ -5,9 +5,10 @@
 /[Bb]uilds/
 /Assets/AssetStoreTools*
 /Assets/Audio/
-/Assets/Icons/
+/Assets/Images/
 /Assets/OpenCVForUnity/
 /Assets/StreamingAssets/
+/Assets/Plugins/NativeGallery/
 
 # Visual Studio cache directory
 .vs/

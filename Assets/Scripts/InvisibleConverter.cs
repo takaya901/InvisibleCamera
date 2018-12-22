@@ -7,10 +7,10 @@ public class InvisibleConverter
 {
     Mat _bgr;    //背景
     Text _text;
-    static readonly Scalar SKIN_LOWER = new Scalar(0, 40, 60);
-    static readonly Scalar SKIN_UPPER = new Scalar(20, 255, 255);
+    static readonly Scalar SKIN_LOWER = new Scalar(0, 0, 50);
+    static readonly Scalar SKIN_UPPER = new Scalar(20, 200, 255);
     static readonly Scalar HAIR_LOWER = new Scalar(0, 0, 0);    
-    static readonly Scalar HAIR_UPPER = new Scalar(180, 120, 80);
+    static readonly Scalar HAIR_UPPER = new Scalar(180, 120, 100);
 
     /// <summary>背景を保存したかどうか</summary>
     public bool HasSavedBgr { get; set; }

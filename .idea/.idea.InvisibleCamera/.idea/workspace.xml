@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b8bd20b-a47b-4c17-a50c-1a7793ed047b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Audio.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/shutter.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/shutter.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.InvisibleCamera/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.InvisibleCamera/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShutterHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShutterHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WebCamManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WebCamManager.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,13 +27,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="5396" />
+          <entry key="cs" value="5701" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="5396" />
+          <entry key="C#" value="5701" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -51,22 +53,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/WebCamManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+            <state relative-caret-position="317">
+              <caret line="31" column="64" selection-start-line="31" selection-start-column="64" selection-end-line="31" selection-end-column="64" />
               <folding>
-                <marker date="1545412955207" expanded="true" signature="6:103" ph="..." />
-                <marker date="1545412955207" expanded="true" signature="105:190" ph="/// カメラ映像を透明人間に変換してQuadに投影する． ... " />
-                <marker date="1545412955207" expanded="true" signature="306:2636" ph="{...}" />
-                <marker date="1545412955207" expanded="true" signature="773:1184" ph="{...}" />
-                <marker date="1545412955207" expanded="true" signature="1207:1791" ph="{...}" />
-                <marker date="1545412955207" expanded="true" signature="1585:1649" ph="{...}" />
-                <marker date="1545412955207" expanded="true" signature="1860:2075" ph="{...}" />
-                <marker date="1545412955207" expanded="true" signature="2170:2300" ph="{...}" />
-                <marker date="1545412955207" expanded="true" signature="2355:2440" ph="{...}" />
-                <marker date="1545412955207" expanded="true" signature="2547:2634" ph="{...}" />
+                <marker date="1545490815552" expanded="true" signature="6:117" ph="..." />
+                <marker date="1545490815552" expanded="true" signature="119:204" ph="/// カメラ映像を透明人間に変換してQuadに投影する． ... " />
+                <marker date="1545490815552" expanded="true" signature="320:2950" ph="{...}" />
+                <marker date="1545490815552" expanded="true" signature="831:1377" ph="{...}" />
+                <marker date="1545490815552" expanded="true" signature="1400:1984" ph="{...}" />
+                <marker date="1545490815552" expanded="true" signature="1778:1842" ph="{...}" />
+                <marker date="1545490815552" expanded="true" signature="2053:2401" ph="{...}" />
+                <marker date="1545490815552" expanded="true" signature="2496:2622" ph="{...}" />
+                <marker date="1545490815552" expanded="true" signature="2677:2758" ph="{...}" />
+                <marker date="1545490815552" expanded="true" signature="2865:2948" ph="{...}" />
+                <marker date="1545490815552" expanded="true" signature="2966:2990" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -75,7 +78,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/ToMatHelperManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41">
+            <state relative-caret-position="-126">
               <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
               <folding>
                 <marker date="1545412698483" expanded="true" signature="6:47" ph="..." />
@@ -98,7 +101,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/InvisibleConverter.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
+            <state relative-caret-position="192">
               <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
               <folding>
                 <marker date="1545411469456" expanded="false" signature="6:126" ph="..." />
@@ -116,20 +119,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/ShutterHandler.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="21" column="55" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="88" />
+            <state relative-caret-position="608">
+              <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
               <folding>
-                <marker date="1545413211110" expanded="true" signature="6:75" ph="..." />
-                <marker date="1545413211110" expanded="true" signature="77:141" ph="/// シャッターが押されたら音を鳴らしてスクリーンショットを保存する ... " />
-                <marker date="1545413211110" expanded="true" signature="185:2322" ph="{...}" />
-                <marker date="1545413211110" expanded="true" signature="366:979" ph="{...}" />
-                <marker date="1545413211110" expanded="true" signature="1011:1166" ph="{...}" />
-                <marker date="1545413211110" expanded="true" signature="1230:1657" ph="{...}" />
-                <marker date="1545413211110" expanded="true" signature="1700:2320" ph="{...}" />
-                <marker date="1545413211110" expanded="true" signature="2152:2270" ph="{...}" />
+                <marker date="1545416701823" expanded="true" signature="6:75" ph="..." />
+                <marker date="1545416701823" expanded="true" signature="77:141" ph="/// シャッターが押されたら音を鳴らしてスクリーンショットを保存する ... " />
+                <marker date="1545416701823" expanded="true" signature="185:2326" ph="{...}" />
+                <marker date="1545416701823" expanded="true" signature="366:983" ph="{...}" />
+                <marker date="1545416701823" expanded="true" signature="1015:1170" ph="{...}" />
+                <marker date="1545416701823" expanded="true" signature="1234:1661" ph="{...}" />
+                <marker date="1545416701823" expanded="true" signature="1704:2324" ph="{...}" />
+                <marker date="1545416701823" expanded="true" signature="2156:2274" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -138,7 +141,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/OpenCVForUnity/Examples/WebCamTextureToMatHelper.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
+            <state relative-caret-position="155">
               <caret line="349" column="28" selection-start-line="349" selection-start-column="28" selection-end-line="349" selection-end-column="28" />
               <folding>
                 <marker date="1535830370000" expanded="false" signature="6:139" ph="..." />
@@ -362,8 +365,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraSwitchHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InvisibleConverter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ToMatHelperManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/WebCamManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ShutterHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WebCamManager.cs" />
       </list>
     </option>
   </component>
@@ -433,12 +436,12 @@
       <workItem from="1545222535195" duration="6581000" />
       <workItem from="1545231679506" duration="6052000" />
       <workItem from="1545241286712" duration="28823000" />
-      <workItem from="1545375000983" duration="21498000" />
+      <workItem from="1545375000983" duration="24013000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62981000" />
+    <option name="totallyTimeSpent" value="65496000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -453,8 +456,8 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49876237" visible="true" weight="0.19957082" />
-      <window_info id="Structure" order="1" sideWeight="0.50123763" side_tool="true" visible="true" weight="0.19957082" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.1720297" visible="true" weight="0.19957082" />
+      <window_info active="true" id="Structure" order="1" sideWeight="0.8279703" side_tool="true" visible="true" weight="0.19957082" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -917,9 +920,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InvisibleConverter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+          <folding>
+            <marker date="1545411469456" expanded="false" signature="6:126" ph="..." />
+            <marker date="1545411469456" expanded="true" signature="159:2559" ph="{...}" />
+            <marker date="1545411469456" expanded="true" signature="583:617" ph="{...}" />
+            <marker date="1545411469456" expanded="true" signature="623:694" ph="///背景を保存する ... " />
+            <marker date="1545411469456" expanded="true" signature="733:1109" ph="{...}" />
+            <marker date="1545411469456" expanded="true" signature="885:1103" ph="{...}" />
+            <marker date="1545411469456" expanded="true" signature="931:1093" ph="{...}" />
+            <marker date="1545411469456" expanded="true" signature="977:1079" ph="{...}" />
+            <marker date="1545411469456" expanded="true" signature="1119:1247" ph="///肌と髪の領域を背景で置換する ... " />
+            <marker date="1545411469456" expanded="true" signature="1292:2557" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ShutterHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
+          <folding>
+            <marker date="1545416701823" expanded="true" signature="6:75" ph="..." />
+            <marker date="1545416701823" expanded="true" signature="77:141" ph="/// シャッターが押されたら音を鳴らしてスクリーンショットを保存する ... " />
+            <marker date="1545416701823" expanded="true" signature="185:2326" ph="{...}" />
+            <marker date="1545416701823" expanded="true" signature="366:983" ph="{...}" />
+            <marker date="1545416701823" expanded="true" signature="1015:1170" ph="{...}" />
+            <marker date="1545416701823" expanded="true" signature="1234:1661" ph="{...}" />
+            <marker date="1545416701823" expanded="true" signature="1704:2324" ph="{...}" />
+            <marker date="1545416701823" expanded="true" signature="2156:2274" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ToMatHelperManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-126">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+          <folding>
+            <marker date="1545412698483" expanded="true" signature="6:47" ph="..." />
+            <marker date="1545412698483" expanded="true" signature="49:154" ph="/// WebCamTextureToMatHelperの初期化・破棄を行う． ... " />
+            <marker date="1545412698483" expanded="true" signature="186:2579" ph="{...}" />
+            <marker date="1545412698483" expanded="true" signature="396:506" ph="{...}" />
+            <marker date="1545412698483" expanded="true" signature="588:2062" ph="{...}" />
+            <marker date="1545412698483" expanded="true" signature="1066:1307" ph="{...}" />
+            <marker date="1545412698483" expanded="true" signature="1587:1685" ph="{...}" />
+            <marker date="1545412698483" expanded="true" signature="1775:1864" ph="/* Quadを画面いっぱいにリサイズ ... */" />
+            <marker date="1545412698483" expanded="true" signature="2137:2313" ph="{...}" />
+            <marker date="1545412698483" expanded="true" signature="2231:2307" ph="{...}" />
+            <marker date="1545412698483" expanded="true" signature="2420:2503" ph="{...}" />
+            <marker date="1545412698483" expanded="true" signature="2529:2577" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/OpenCVForUnity/Examples/WebCamTextureToMatHelper.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
+        <state relative-caret-position="155">
           <caret line="349" column="28" selection-start-line="349" selection-start-column="28" selection-end-line="349" selection-end-column="28" />
           <folding>
             <marker date="1535830370000" expanded="false" signature="6:139" ph="..." />
@@ -1085,78 +1145,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InvisibleConverter.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-          <folding>
-            <marker date="1545411469456" expanded="false" signature="6:126" ph="..." />
-            <marker date="1545411469456" expanded="true" signature="159:2559" ph="{...}" />
-            <marker date="1545411469456" expanded="true" signature="583:617" ph="{...}" />
-            <marker date="1545411469456" expanded="true" signature="623:694" ph="///背景を保存する ... " />
-            <marker date="1545411469456" expanded="true" signature="733:1109" ph="{...}" />
-            <marker date="1545411469456" expanded="true" signature="885:1103" ph="{...}" />
-            <marker date="1545411469456" expanded="true" signature="931:1093" ph="{...}" />
-            <marker date="1545411469456" expanded="true" signature="977:1079" ph="{...}" />
-            <marker date="1545411469456" expanded="true" signature="1119:1247" ph="///肌と髪の領域を背景で置換する ... " />
-            <marker date="1545411469456" expanded="true" signature="1292:2557" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ToMatHelperManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-          <folding>
-            <marker date="1545412698483" expanded="true" signature="6:47" ph="..." />
-            <marker date="1545412698483" expanded="true" signature="49:154" ph="/// WebCamTextureToMatHelperの初期化・破棄を行う． ... " />
-            <marker date="1545412698483" expanded="true" signature="186:2579" ph="{...}" />
-            <marker date="1545412698483" expanded="true" signature="396:506" ph="{...}" />
-            <marker date="1545412698483" expanded="true" signature="588:2062" ph="{...}" />
-            <marker date="1545412698483" expanded="true" signature="1066:1307" ph="{...}" />
-            <marker date="1545412698483" expanded="true" signature="1587:1685" ph="{...}" />
-            <marker date="1545412698483" expanded="true" signature="1775:1864" ph="/* Quadを画面いっぱいにリサイズ ... */" />
-            <marker date="1545412698483" expanded="true" signature="2137:2313" ph="{...}" />
-            <marker date="1545412698483" expanded="true" signature="2231:2307" ph="{...}" />
-            <marker date="1545412698483" expanded="true" signature="2420:2503" ph="{...}" />
-            <marker date="1545412698483" expanded="true" signature="2529:2577" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/WebCamManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        <state relative-caret-position="317">
+          <caret line="31" column="64" selection-start-line="31" selection-start-column="64" selection-end-line="31" selection-end-column="64" />
           <folding>
-            <marker date="1545412955207" expanded="true" signature="6:103" ph="..." />
-            <marker date="1545412955207" expanded="true" signature="105:190" ph="/// カメラ映像を透明人間に変換してQuadに投影する． ... " />
-            <marker date="1545412955207" expanded="true" signature="306:2636" ph="{...}" />
-            <marker date="1545412955207" expanded="true" signature="773:1184" ph="{...}" />
-            <marker date="1545412955207" expanded="true" signature="1207:1791" ph="{...}" />
-            <marker date="1545412955207" expanded="true" signature="1585:1649" ph="{...}" />
-            <marker date="1545412955207" expanded="true" signature="1860:2075" ph="{...}" />
-            <marker date="1545412955207" expanded="true" signature="2170:2300" ph="{...}" />
-            <marker date="1545412955207" expanded="true" signature="2355:2440" ph="{...}" />
-            <marker date="1545412955207" expanded="true" signature="2547:2634" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ShutterHandler.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="21" column="55" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="88" />
-          <folding>
-            <marker date="1545413211110" expanded="true" signature="6:75" ph="..." />
-            <marker date="1545413211110" expanded="true" signature="77:141" ph="/// シャッターが押されたら音を鳴らしてスクリーンショットを保存する ... " />
-            <marker date="1545413211110" expanded="true" signature="185:2322" ph="{...}" />
-            <marker date="1545413211110" expanded="true" signature="366:979" ph="{...}" />
-            <marker date="1545413211110" expanded="true" signature="1011:1166" ph="{...}" />
-            <marker date="1545413211110" expanded="true" signature="1230:1657" ph="{...}" />
-            <marker date="1545413211110" expanded="true" signature="1700:2320" ph="{...}" />
-            <marker date="1545413211110" expanded="true" signature="2152:2270" ph="{...}" />
+            <marker date="1545490815552" expanded="true" signature="6:117" ph="..." />
+            <marker date="1545490815552" expanded="true" signature="119:204" ph="/// カメラ映像を透明人間に変換してQuadに投影する． ... " />
+            <marker date="1545490815552" expanded="true" signature="320:2950" ph="{...}" />
+            <marker date="1545490815552" expanded="true" signature="831:1377" ph="{...}" />
+            <marker date="1545490815552" expanded="true" signature="1400:1984" ph="{...}" />
+            <marker date="1545490815552" expanded="true" signature="1778:1842" ph="{...}" />
+            <marker date="1545490815552" expanded="true" signature="2053:2401" ph="{...}" />
+            <marker date="1545490815552" expanded="true" signature="2496:2622" ph="{...}" />
+            <marker date="1545490815552" expanded="true" signature="2677:2758" ph="{...}" />
+            <marker date="1545490815552" expanded="true" signature="2865:2948" ph="{...}" />
+            <marker date="1545490815552" expanded="true" signature="2966:2990" ph="{...}" />
           </folding>
         </state>
       </provider>

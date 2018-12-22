@@ -24,8 +24,8 @@ public class ShutterHandler : MonoBehaviour
 		using(var joPublicDir = jcEnvironment.CallStatic<AndroidJavaObject>(
 			"getExternalStoragePublicDirectory",
 			jcEnvironment.GetStatic<string>("DIRECTORY_PICTURES"))) {
-			var outputPath = joPublicDir.Call<string>("toString");
-			_imgSavePath = outputPath + IMG_SAVE_DIR;
+			var exStorageDir = joPublicDir.Call<string>("toString");
+			_imgSavePath = exStorageDir + IMG_SAVE_DIR;
 			if (!Directory.Exists(_imgSavePath)) Directory.CreateDirectory(_imgSavePath);
 		}
 		#endif

@@ -5,6 +5,9 @@
 /[Bb]uilds/
 /Assets/AssetStoreTools*
 /Assets/Audio/
+/Assets/Icons/
+/Assets/OpenCVForUnity/
+/Assets/StreamingAssets/
 
 # Visual Studio cache directory
 .vs/
@@ -51,5 +54,5 @@ Thumbs.db
 #python bytecode cache, for some plugins.
 *.pyc
 
-/Assets/OpenCVForUnity/
-/Assets/StreamingAssets/
+*.png
+*.jpg

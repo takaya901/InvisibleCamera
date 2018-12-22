@@ -553,7 +553,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="CameraSwitchHandler.cs" t="Include" />
+          <e p="CameraSwitcher.cs" t="Include" />
           <e p="InvisibleConverter.cs" t="Include" />
           <e p="ShutterHandler.cs" t="Include" />
           <e p="ToMatHelperManager.cs" t="Include" />

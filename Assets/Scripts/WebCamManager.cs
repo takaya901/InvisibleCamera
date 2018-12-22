@@ -12,15 +12,18 @@ using Text = UnityEngine.UI.Text;
 public class WebCamManager : MonoBehaviour
 {
     [SerializeField] Text _text;
-    Texture2D _quadTex;                     //カメラ映像投影用
-    WebCamTextureToMatHelper _toMatHelper;  //WebCamTextureをMatに変換する
-    ToMatHelperManager _toMatHelperMgr; //WebCamTextureToMatHelperの初期化・破棄を行う
-    InvisibleConverter _invCvtr;            //透明人間に変換する
+    [SerializeField] GameObject _mainCanvas;      //シャッターボタンとカメラ切り替えボタンが乗ったキャンバス
+    [SerializeField] GameObject _camSwitchDialog; //カメラ切り替え時の確認ダイアログ
+    
+    Texture2D _quadTex;                    //カメラ映像投影用
+    WebCamTextureToMatHelper _toMatHelper; //WebCamTextureをMatに変換する
+    ToMatHelperManager _toMatHelperMgr;    //WebCamTextureToMatHelperの初期化等を行う
+    CameraSwitcher _cameraSwitcher;        //リア/フロントを切り替える
+    InvisibleConverter _invCvtr;
     FpsMonitor _fpsMonitor;
 
-    const string USE_CAMERA_KEY = "USE CAMERA";
-    const float TIME_WAIT_CAMERA = 5f;           //カメラ起動を待つ時間
-    float _remainingWaitTime = TIME_WAIT_CAMERA; //残り待ち時間
+    const float TIME_WAIT_CAMERA = 5f;              //カメラ起動を待つ時間
+    float _remainingWaitingTime = TIME_WAIT_CAMERA; //残り待ち時間
     
     void Start()
     {
@@ -30,7 +33,10 @@ public class WebCamManager : MonoBehaviour
         _invCvtr = new InvisibleConverter(_text);
         _fpsMonitor = GetComponent<FpsMonitor>();
         _toMatHelper = GetComponent<WebCamTextureToMatHelper>();
-        var useCamera = Convert.ToBoolean(PlayerPrefs.GetInt(USE_CAMERA_KEY, 0));
+        _cameraSwitcher = new CameraSwitcher(_toMatHelper, _invCvtr, _mainCanvas, _camSwitchDialog);
+        
+        //リア/フロントをPlayerPrefabsから読み込む
+        var useCamera = _cameraSwitcher.UseCamera;
         _toMatHelper.requestedIsFrontFacing = useCamera;
         _toMatHelperMgr = new ToMatHelperManager(gameObject, _toMatHelper, _fpsMonitor);
         _toMatHelper.Initialize();
@@ -40,8 +46,8 @@ public class WebCamManager : MonoBehaviour
     {
         #if !UNITY_EDITOR && UNITY_ANDROID
         //起動時とカメラ切替時にカメラ起動まで待つ
-        if (_remainingWaitTime > 0) {
-            _remainingWaitTime -= Time.deltaTime;
+        if (_remainingWaitingTime > 0) {
+            _remainingWaitingTime -= Time.deltaTime;
             return;
         }
         #endif
@@ -52,21 +58,36 @@ public class WebCamManager : MonoBehaviour
             _invCvtr.SaveBgr(_toMatHelper.GetMat());
         }
         
+        //透明人間に変換して表示
         var webCamMat = _invCvtr.CvtToInvisible(_toMatHelper.GetMat());
         Utils.fastMatToTexture2D(webCamMat, _quadTex);
     }
 
-    //ボタンが押されたらリアカメラとフロントカメラを切り替える
+    //カメラ切り替えボタンが押されたら確認ダイアログを表示
+    public void OnSwitcherTouched()
+    {
+        _cameraSwitcher.OnSwitcherTouched();
+    }
+    
+    //OKが押されたらリアカメラとフロントカメラを切り替える
     public void OnCameraSwitch()
     {
-        //PlayerPrefsの使用カメラを書き換える
-        PlayerPrefs.SetInt(USE_CAMERA_KEY, Convert.ToInt32(!_toMatHelper.requestedIsFrontFacing));
-        _invCvtr.HasSavedBgr = false;          //背景を保存し直す
-        _remainingWaitTime = TIME_WAIT_CAMERA; //カメラ起動するまで待つ
-        _toMatHelper.requestedIsFrontFacing = !_toMatHelper.requestedIsFrontFacing;
+        ResetWaitingTime(); //カメラ起動するまで待つ
+        _cameraSwitcher.OnCameraSwitch();
     }
 
-    //WebCamTextureToMatHelperの初期化・破棄
+    //キャンセルが押されたらダイアログ消去
+    public void OnSwtichCancel()
+    {
+        _cameraSwitcher.OnSwtichCancel();
+    }
+
+    void ResetWaitingTime()
+    {
+        _remainingWaitingTime = TIME_WAIT_CAMERA;
+    }
+
+    //WebCamTextureToMatHelperの初期化・破棄・エラー処理
     public void OnWebCamTextureToMatHelperInitialized(){
         //QuadのTextureにWebCamTextureを設定する
         _toMatHelperMgr.OnWebCamTextureToMatHelperInitialized(ref _quadTex);
@@ -79,10 +100,4 @@ public class WebCamManager : MonoBehaviour
     public void OnWebCamTextureToMatHelperErrorOccurred(WebCamTextureToMatHelper.ErrorCode errorCode){
         _toMatHelperMgr.OnWebCamTextureToMatHelperErrorOccurred(errorCode);
     }
-}
-
-enum UseCamera
-{
-    REAR,
-    FRONT
 }

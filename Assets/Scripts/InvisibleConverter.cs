@@ -5,36 +5,25 @@ using Text = UnityEngine.UI.Text;
 
 public class InvisibleConverter
 {
-    Mat _bgr;    //背景
-    Text _text;
+    Mat _bgr;   //背景
+    Text _text; //for debug
     static readonly Scalar SKIN_LOWER = new Scalar(0, 0, 50);
     static readonly Scalar SKIN_UPPER = new Scalar(20, 200, 255);
     static readonly Scalar HAIR_LOWER = new Scalar(0, 0, 0);    
     static readonly Scalar HAIR_UPPER = new Scalar(180, 120, 100);
 
     /// <summary>背景を保存したかどうか</summary>
-    public bool HasSavedBgr { get; set; }
+    public bool IsSavedBgr { get; set; }
 
     public InvisibleConverter(Text text)
     {
         _text = text;
     }
 
-    /// <summary>背景を保存する</summary>
-    /// <param name="webcamMat"></param>
     public void SaveBgr(Mat webcamMat)
     {
         _bgr = webcamMat.clone();
-        int width = _bgr.width();
-        int height = _bgr.height();
-        for (int y = 0; y < height; y++) {
-            for (int x = 0; x < width; x++) {
-                if (_bgr.get(x, y)[0] != 0) {
-                    HasSavedBgr = true;
-                    x = width; y = height;
-                }
-            }
-        }
+        IsSavedBgr = true;
     }
     
     /// <summary>肌と髪の領域を背景で置換する</summary>

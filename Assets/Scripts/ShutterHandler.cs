@@ -8,13 +8,12 @@ using UnityEngine;
 /// </summary>
 public class ShutterHandler : MonoBehaviour
 {
-	[SerializeField] Canvas _canvas;
+	[SerializeField] Canvas _mainCanvas; //シャッターボタンとカメラ切り替えボタンが乗ったキャンバス
 	AudioSource _shutter;
-	string _imgSavePath = "";
 	const string EXT = ".jpg";
 	const string IMG_SAVE_DIR = "InvisibleCamera";
 	
-	void Start ()
+	void Start()
 	{
 		_shutter = GetComponent<AudioSource>();
 	}
@@ -28,7 +27,7 @@ public class ShutterHandler : MonoBehaviour
 	//UIを非表示にしてからスクリーンショットを保存する
 	IEnumerator CaptureScreenshot()
 	{
-		_canvas.gameObject.SetActive(false);
+		_mainCanvas.gameObject.SetActive(false);
 		var screenShot = new Texture2D(Screen.width, Screen.height, TextureFormat.RGB24, false);
 		yield return new WaitForEndOfFrame();
 
@@ -43,6 +42,6 @@ public class ShutterHandler : MonoBehaviour
 			NativeGallery.SaveImageToGallery(screenShot, IMG_SAVE_DIR, "Inv{0}" + EXT);
 		#endif
 		Destroy(screenShot);
-		_canvas.gameObject.SetActive(true);
+		_mainCanvas.gameObject.SetActive(true);
 	}
 }

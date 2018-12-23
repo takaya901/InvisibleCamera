@@ -9,6 +9,8 @@
 /Assets/OpenCVForUnity/
 /Assets/StreamingAssets/
 /Assets/Plugins/NativeGallery/
+/Assets/GoogleMobileAds/
+/Assets/PlayServicesResolver/
 
 # Visual Studio cache directory
 .vs/

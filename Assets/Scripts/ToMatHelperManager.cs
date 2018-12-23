@@ -46,7 +46,7 @@ public class ToMatHelperManager
         }
         
         //Quadを画面いっぱいにリサイズ
-        ////https: //blog.narumium.net/2016/12/11/unityでスマホカメラを全面表示する/
+        //https: //blog.narumium.net/2016/12/11/unityでスマホカメラを全面表示する/
         var quadHeight = Camera.main.orthographicSize * 2;
         var quadWidth = quadHeight * Camera.main.aspect;
         _quad.transform.localScale = new Vector3(quadWidth, quadHeight, 1);

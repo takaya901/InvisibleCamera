@@ -59,7 +59,7 @@ public class WebCamManager : MonoBehaviour
         if (!_toMatHelper.IsPlaying() || !_toMatHelper.DidUpdateThisFrame()) return;
 
         //背景を保存する．StartでやるとWebCamのPlayが間に合わない？
-        if (!_invCvtr.IsSavedBgr) {
+        if (!_invCvtr.IsSavedBg) {
             _invCvtr.SaveBgr(_toMatHelper.GetMat());
         }
         

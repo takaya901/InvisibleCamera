@@ -6,21 +6,21 @@ using UnityEngine;
 /// <summary>
 /// シャッターが押されたら音を鳴らしてスクリーンショットを保存する
 /// </summary>
-public class ShutterHandler : MonoBehaviour
+public class PictureTaker : MonoBehaviour
 {
 	[SerializeField] Canvas _mainCanvas; //シャッターボタンとカメラ切り替えボタンが乗ったキャンバス
-	AudioSource _shutter;
+	AudioSource _shutterSound;
 	const string EXT = ".jpg";
 	const string IMG_SAVE_DIR = "InvisibleCamera";
 	
 	void Start()
 	{
-		_shutter = GetComponent<AudioSource>();
+		_shutterSound = GetComponent<AudioSource>();
 	}
 	
 	public void OnShutterTouched()
 	{
-		_shutter.Play();
+		_shutterSound.Play();
 		StartCoroutine(CaptureScreenshot());
 	}
 	
@@ -34,12 +34,12 @@ public class ShutterHandler : MonoBehaviour
 		screenShot.ReadPixels(new Rect(0, 0, screenShot.width, screenShot.height), 0, 0);
 		screenShot.Apply();
 
+		var imgName = "Inv_" + DateTime.Now.ToString("yyyyMMdd_HHmmss") + EXT;
 		#if UNITY_EDITOR
-			var imgName = DateTime.Now.ToString("yyyyMMdd_HHmmss") + EXT;
 			var bytes = screenShot.EncodeToPNG();
 			File.WriteAllBytes(imgName, bytes);
 		#elif UNITY_ANDROID
-			NativeGallery.SaveImageToGallery(screenShot, IMG_SAVE_DIR, "Inv{0}" + EXT);
+			NativeGallery.SaveImageToGallery(screenShot, IMG_SAVE_DIR, imgName);
 		#endif
 		Destroy(screenShot);
 		_mainCanvas.gameObject.SetActive(true);

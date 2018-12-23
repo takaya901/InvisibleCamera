@@ -40,7 +40,7 @@ public class CameraSwitcher
 		SwitchCanvas();
 		//PlayerPrefsの使用カメラを書き換える
 		PlayerPrefs.SetInt(USE_CAMERA_KEY, Convert.ToInt32(!_toMatHelper.requestedIsFrontFacing));
-		_invCvtr.IsSavedBgr = false; //背景を保存し直す
+		_invCvtr.IsSavedBg = false; //背景を保存し直す
 		_toMatHelper.requestedIsFrontFacing = !_toMatHelper.requestedIsFrontFacing;
 	}
 

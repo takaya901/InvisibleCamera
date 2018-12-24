@@ -639,6 +639,7 @@
           <e p="AdMob.cs" t="Include" />
           <e p="CameraSwitcher.cs" t="Include" />
           <e p="InvisibleConverter.cs" t="Include" />
+          <e p="MovieTaker.cs" t="Include" />
           <e p="PictureTaker.cs" t="Include" />
           <e p="ToMatHelperManager.cs" t="Include" />
           <e p="WebCamManager.cs" t="Include" />

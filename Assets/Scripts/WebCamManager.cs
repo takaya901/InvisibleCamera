@@ -11,18 +11,23 @@ using Text = UnityEngine.UI.Text;
 [RequireComponent(typeof(WebCamTextureToMatHelper), typeof(FpsMonitor))]
 public class WebCamManager : MonoBehaviour
 {
-    [SerializeField] Text _text;                        //for debug
-    [SerializeField] GameObject _mainCanvas;            //シャッターボタンとカメラ切り替えボタンが乗ったキャンバス
-    [SerializeField] GameObject _camSwitchDialog;       //カメラ切り替え時の確認ダイアログ
-    [SerializeField] GameObject _camSwitchingIndicator; //カメラ切り替え中のインジケータ
+    [SerializeField] Text _text;                      //for debug
+    [SerializeField] GameObject _mainCanvas;          //シャッターボタンとカメラ切り替えボタンが乗ったキャンバス
+    [SerializeField] GameObject _camSwitchDialog;     //カメラ切り替え時の確認ダイアログ
+    [SerializeField] GameObject _waitingingIndicator; //カメラ起動・背景取得中のインジケータ
+    [SerializeField] GameObject _recordStopCanvas;
     
     Texture2D _quadTex;                    //カメラ映像投影用
     WebCamTextureToMatHelper _toMatHelper; //WebCamTextureをMatに変換する
     ToMatHelperManager _toMatHelperMgr;    //WebCamTextureToMatHelperの初期化等を行う
     CameraSwitcher _cameraSwitcher;        //リア/フロントを切り替える
     InvisibleConverter _invCvtr;
+    MovieTaker _movieTaker;
     FpsMonitor _fpsMonitor;
+    AudioSource _recordSound;
 
+    Size _size;
+    bool _isRecording;
     const int TIME_WAIT_CAMERA = 5000;    //カメラ起動を待つ時間（ms）
     float _remainingWaitingTime;
     
@@ -35,6 +40,7 @@ public class WebCamManager : MonoBehaviour
         _invCvtr = new InvisibleConverter(_text);
         _cameraSwitcher = new CameraSwitcher(_toMatHelper, _invCvtr, _mainCanvas, _camSwitchDialog);
         _fpsMonitor = GetComponent<FpsMonitor>();
+        _recordSound = GetComponent<AudioSource>();
         
         //リア/フロントをPlayerPrefabsから読み込む
         _toMatHelper.requestedIsFrontFacing = _cameraSwitcher.UseCamera;
@@ -49,12 +55,12 @@ public class WebCamManager : MonoBehaviour
     
     void Update()
     {
-        //カメラ起動まで待つ
+        //アプリ起動時とカメラ切替時，カメラ起動まで待つ
         if (_remainingWaitingTime > 0) {
             _remainingWaitingTime -= Time.deltaTime;
             return;
         }
-        _camSwitchingIndicator.SetActive(false);
+        _waitingingIndicator.SetActive(false);
         
         if (!_toMatHelper.IsPlaying() || !_toMatHelper.DidUpdateThisFrame()) return;
 
@@ -64,8 +70,33 @@ public class WebCamManager : MonoBehaviour
         }
         
         //透明人間に変換して表示
-        var webCamMat = _invCvtr.CvtToInvisible(_toMatHelper.GetMat());
-        Utils.fastMatToTexture2D(webCamMat, _quadTex);
+        var invImg = _invCvtr.CvtToInvisible(_toMatHelper.GetMat());
+        if (_isRecording) {
+            _text.text = _movieTaker._writer.isOpened().ToString();
+            _movieTaker?.Write(invImg);
+        }
+        Utils.fastMatToTexture2D(invImg, _quadTex);
+    }
+
+    //録画ボタンが押されたら録画開始
+    public void OnRecordButtonTouched()
+    {
+        _recordSound.Play();
+        _movieTaker = new MovieTaker(_invCvtr.GetImgSize());
+        _mainCanvas.SetActive(false);
+        _recordStopCanvas.SetActive(true);
+        _isRecording = true;
+    }
+
+    //録画停止ボタンが押されたら録画停止
+    public void OnStopButtonTouched()
+    {
+        _recordSound.Play();
+        _movieTaker.Close();
+        _text.text = _movieTaker.a;
+        _mainCanvas.SetActive(true);
+        _recordStopCanvas.SetActive(false);
+        _isRecording = false;
     }
 
     //カメラ切り替えボタンが押されたら確認ダイアログを表示
@@ -79,7 +110,13 @@ public class WebCamManager : MonoBehaviour
     {
         _cameraSwitcher.OnCameraSwitch();
         _remainingWaitingTime = TIME_WAIT_CAMERA / 1000f;    //カメラ起動まで待つ
-        _camSwitchingIndicator.SetActive(true);
+        _waitingingIndicator.SetActive(true);
+    }
+
+    //RESETが押されたら背景再取得
+    public void OnResetButtonTouched()
+    {
+        _invCvtr.SaveBgr(_toMatHelper.GetMat());
     }
 
     //キャンセルが押されたらダイアログ消去

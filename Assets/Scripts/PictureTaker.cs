@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.IO;
+using OpenCVForUnity;
 using UnityEngine;
+using Rect = UnityEngine.Rect;
 
 /// <summary>
 /// シャッターが押されたら音を鳴らしてスクリーンショットを保存する
@@ -36,7 +38,7 @@ public class PictureTaker : MonoBehaviour
 
 		var imgName = "Inv_" + DateTime.Now.ToString("yyyyMMdd_HHmmss") + EXT;
 		#if UNITY_EDITOR
-			var bytes = screenShot.EncodeToPNG();
+			var bytes = screenShot.EncodeToJPG();
 			File.WriteAllBytes(imgName, bytes);
 		#elif UNITY_ANDROID
 			NativeGallery.SaveImageToGallery(screenShot, IMG_SAVE_DIR, imgName);

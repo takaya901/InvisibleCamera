@@ -1,21 +1,11 @@
-﻿using System;
-using OpenCVForUnity;
-using UnityEngine;
+﻿using OpenCVForUnity;
 using static OpenCVForUnity.Imgproc;
 using static OpenCVForUnity.Core;
 using Text = UnityEngine.UI.Text;
 
 public class InvisibleConverter
 {
-    Mat _bg;   //背景
-//    Mat blurred = new Mat(),
-//        hsv = new Mat(),
-//        skinMask = new Mat(), 
-//        hairMask = new Mat(),
-//        skinAndHairMask = new Mat(), 
-//        bgrOnSkinAndHair = new Mat(), 
-//        withoutSkinAndHair = new Mat(), 
-//        invisible = new Mat();
+    Mat _bg;    //背景
     Text _text; //for debug
     static readonly Scalar SKIN_LOWER = new Scalar(0, 0, 50);
     static readonly Scalar SKIN_UPPER = new Scalar(20, 200, 255);
@@ -34,6 +24,7 @@ public class InvisibleConverter
     {
         _bg = webcamMat.clone();
         IsSavedBg = true;
+//        _text.text = _bg.size().ToString();
     }
     
     /// <summary>肌と髪の領域を背景で置換する</summary>
@@ -73,5 +64,10 @@ public class InvisibleConverter
         bitwise_or(withoutSkinAndHair, bgOnSkinAndHair, invisible);
         
         return invisible;
+    }
+
+    public Size GetImgSize()
+    {
+        return _bg.size();
     }
 }

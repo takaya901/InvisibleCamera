@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b8bd20b-a47b-4c17-a50c-1a7793ed047b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.InvisibleCamera/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.InvisibleCamera/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.InvisibleCamera/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.InvisibleCamera/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InvisibleConverter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InvisibleConverter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PictureTaker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PictureTaker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WebCamManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WebCamManager.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +53,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/WebCamManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
+            <state relative-caret-position="-113">
               <caret line="95" column="35" selection-start-line="95" selection-start-column="35" selection-end-line="95" selection-end-column="35" />
               <folding>
                 <marker date="1545616682021" expanded="false" signature="6:133" ph="..." />
@@ -88,7 +83,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/MovieTaker.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="543">
-              <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+              <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
               <folding>
                 <marker date="1545618503725" expanded="true" signature="6:149" ph="..." />
                 <marker date="1545618503725" expanded="true" signature="234:1288" ph="{...}" />
@@ -536,12 +531,12 @@
       <workItem from="1545231679506" duration="6052000" />
       <workItem from="1545241286712" duration="28823000" />
       <workItem from="1545375000983" duration="47792000" />
-      <workItem from="1545580564017" duration="28712000" />
+      <workItem from="1545580564017" duration="28894000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117987000" />
+    <option name="totallyTimeSpent" value="118169000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1801,7 +1796,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/MovieTaker.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="543">
-          <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
           <folding>
             <marker date="1545618503725" expanded="true" signature="6:149" ph="..." />
             <marker date="1545618503725" expanded="true" signature="234:1288" ph="{...}" />
@@ -1816,7 +1811,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/WebCamManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
+        <state relative-caret-position="-113">
           <caret line="95" column="35" selection-start-line="95" selection-start-column="35" selection-end-line="95" selection-end-column="35" />
           <folding>
             <marker date="1545616682021" expanded="false" signature="6:133" ph="..." />

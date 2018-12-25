@@ -16,6 +16,7 @@ public class WebCamManager : MonoBehaviour
     [SerializeField] GameObject _camSwitchDialog;     //カメラ切り替え時の確認ダイアログ
     [SerializeField] GameObject _waitingingIndicator; //カメラ起動・背景取得中のインジケータ
     [SerializeField] GameObject _recordStopCanvas;
+    [SerializeField] GameObject _preferences;
     
     Texture2D _quadTex;                    //カメラ映像投影用
     WebCamTextureToMatHelper _toMatHelper; //WebCamTextureをMatに変換する
@@ -26,9 +27,8 @@ public class WebCamManager : MonoBehaviour
     FpsMonitor _fpsMonitor;
     AudioSource _recordSound;
 
-    Size _size;
     bool _isRecording;
-    const int TIME_WAIT_CAMERA = 5000;    //カメラ起動を待つ時間（ms）
+    const int TIME_WAIT_CAMERA = 1000;    //カメラ起動を待つ時間（ms）
     float _remainingWaitingTime;
     
     void Start()
@@ -72,7 +72,6 @@ public class WebCamManager : MonoBehaviour
         //透明人間に変換して表示
         var invImg = _invCvtr.CvtToInvisible(_toMatHelper.GetMat());
         if (_isRecording) {
-            _text.text = _movieTaker._writer.isOpened().ToString();
             _movieTaker?.Write(invImg);
         }
         Utils.fastMatToTexture2D(invImg, _quadTex);
@@ -93,7 +92,6 @@ public class WebCamManager : MonoBehaviour
     {
         _recordSound.Play();
         _movieTaker.Close();
-        _text.text = _movieTaker.a;
         _mainCanvas.SetActive(true);
         _recordStopCanvas.SetActive(false);
         _isRecording = false;
@@ -123,6 +121,13 @@ public class WebCamManager : MonoBehaviour
     public void OnSwtichCancel()
     {
         _cameraSwitcher.OnSwtichCancel();
+    }
+
+    public void OnPreferencesTouched()
+    {
+        _mainCanvas.SetActive(false);
+        _preferences.SetActive(true);
+        
     }
 
     static async Task WaitCamStartup()

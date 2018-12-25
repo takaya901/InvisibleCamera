@@ -9,12 +9,12 @@ using static OpenCVForUnity.VideoWriter;
 //http://akagi13213.hatenablog.com/entry/2017/02/11/004422
 public class MovieTaker
 {
-    public VideoWriter _writer;
+    VideoWriter _writer;
     string _fileName;
     string _filePath = "";
     const string EXT = ".avi";
     const int FPS = 15;
-    public string a;
+    string a;
 
     public MovieTaker(Size imgSize)
     {
@@ -37,6 +37,7 @@ public class MovieTaker
     public void Close()
     {
         _writer.release();
+        #if !UNITY_EDITOR && UNITY_ANDROID
         if (!File.Exists(_filePath)) return;
         try {
             NativeGallery.SaveVideoToGallery(_filePath, "InvisibleCamera", _fileName);
@@ -45,5 +46,6 @@ public class MovieTaker
         catch (Exception e) {
             a = e.Message;
         }
+        #endif
     }
 }
